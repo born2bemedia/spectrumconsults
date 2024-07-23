@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import ConnectForm from "./ConnectForm";
 
-export const HomeConnect = () => {
+export const ConnectBlock = ({ title, subtitle }) => {
   return (
     <section className="connect">
       <div className="_container">
@@ -16,21 +16,16 @@ export const HomeConnect = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-          >
-            Connect with <br />
-            Spectrum Consults
-          </motion.h2>
+            dangerouslySetInnerHTML={{ __html: title }}
+          />
+
           <motion.p
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            Embark on your path to success with our expert guidance! Share the
-            vision of your project or business needs with us. Fill out the form
-            below with your details, and one of our expert consultants will
-            reach out to you promptly to discuss how we can help you achieve
-            your goals.
+            {subtitle}
           </motion.p>
         </div>
         <div className="connect__bottom">
