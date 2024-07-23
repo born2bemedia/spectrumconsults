@@ -17,6 +17,17 @@
 
 @font-face {
   font-family: "ZonaPro";
+  src: url("/fonts/ZonaPro-SemiBold.eot");
+  src: url("/fonts/ZonaPro-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/ZonaPro-SemiBold.woff2") format("woff2"),
+    url("/fonts/ZonaPro-SemiBold.woff") format("woff"),
+    url("/fonts/ZonaPro-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ZonaPro";
   src: url("/fonts/ZonaPro-Bold.eot");
   src: url("/fonts/ZonaPro-Bold.eot?#iefix") format("embedded-opentype"),
     url("/fonts/ZonaPro-Bold.woff2") format("woff2"),
@@ -151,6 +162,7 @@ a {
 
 button {
   cursor: pointer;
+  font-family: "ZonaPro", sans-serif;
 }
 
 .logo {

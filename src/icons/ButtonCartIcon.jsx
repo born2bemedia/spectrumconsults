@@ -1,0 +1,31 @@
+import React from "react";
+
+const ButtonCartIcon = () => {
+  return (
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 40 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="20" cy="20" r="20" fill="#EA4073" />
+      <circle cx="18.5" cy="28.5" r="1.5" fill="white" />
+      <circle cx="26.5" cy="28.5" r="1.5" fill="white" />
+      <path
+        d="M10.5 11L15 14L17.5 25H27.5L30 16.5H20.5"
+        stroke="white"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M20.5 21L24.1364 21L28.5 21"
+        stroke="white"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export default ButtonCartIcon;

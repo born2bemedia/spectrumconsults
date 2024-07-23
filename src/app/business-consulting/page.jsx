@@ -4,11 +4,17 @@ import ConsultingHero from "./_components/ConsultingHero";
 import { ConnectBlock } from "@/components/ConnectBlock";
 import PriceList from "./_components/PriceList";
 import WhyChoose from "./_components/WhyChoose";
+import CompletePackagesTop from "./_components/CompletePackagesTop";
+import CompletePackages from "./_components/CompletePackages";
+import ServicesTabs from "./_components/ServicesTabs";
 
 const BusinessConsulting = () => {
   return (
     <>
       <ConsultingHero />
+      <ServicesTabs />
+      <CompletePackagesTop />
+      <CompletePackages />
       <WhyChoose />
       <PriceList />
       <ConnectBlock
