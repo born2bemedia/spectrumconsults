@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import StrategicPlaning from "./Services/StrategicPlaning";
+import OperationalExcellence from "./Services/OperationalExcellence";
+import FinancialOptimization from "./Services/FinancialOptimization";
+import CustomerExperienceManagement from "./Services/CustomerExperienceManagement";
+import TechnologyDigitalTransformation from "./Services/TechnologyDigitalTransformation";
 
 const ServicesTabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -81,10 +85,10 @@ const ServicesTabs = () => {
               <img src="/images/consulting/tabsBack.svg" />
               <img src="/images/consulting/tabsBackMob.svg" />
               {activeTab == "tab1" && <StrategicPlaning />}
-              {activeTab == "tab2" && <></>}
-              {activeTab == "tab3" && <></>}
-              {activeTab == "tab4" && <></>}
-              {activeTab == "tab5" && <></>}
+              {activeTab == "tab2" && <OperationalExcellence />}
+              {activeTab == "tab3" && <FinancialOptimization />}
+              {activeTab == "tab4" && <CustomerExperienceManagement />}
+              {activeTab == "tab5" && <TechnologyDigitalTransformation />}
             </div>
           </div>
         </div>
