@@ -1,0 +1,204 @@
+.consulting-hero {
+  margin: 80px 0 150px 0;
+  @media (max-width: 992px) {
+    margin: 40px 0 150px 0;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 60px;
+    @media (max-width: 992px) {
+        gap:40px;
+    }
+    .col-01 {
+      width: calc(50% - 30px);
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+      h1 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: left;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin: 0 0 25px 0;
+        @media (max-width: 992px) {
+          font-size: 24px;
+          br {
+            display: none;
+          }
+        }
+        span {
+          background: linear-gradient(90deg, #be8af9 0%, #edc9c6 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+        }
+      }
+      h2 {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.2;
+        text-align: left;
+        margin: 0 0 40px 0;
+        @media (max-width: 992px) {
+          font-size: 15px;
+          margin-bottom: 30px;
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+    .col-02 {
+      width: calc(50% - 30px);
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+      img {
+        margin-top: -50px;
+        height: auto;
+        @media (max-width: 992px) {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.download-pricelist {
+  position: relative;
+  z-index: 6;
+  &__body {
+    display: flex;
+    gap: 30px;
+    padding: 95px 65px 65px 65px;
+    background-image: url(/images/consulting/priceListBack.svg);
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    @media (max-width: 992px) {
+      flex-direction: column;
+      gap: 20px;
+      padding: 95px 30px 50px 30px;
+      background-image: url(/images/consulting/priceListBackMob.svg);
+    }
+    h2 {
+      color: #fff;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.2;
+      text-align: left;
+      margin: 0;
+      width: 30%;
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
+    > div {
+      width: 70%;
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+      p {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.2;
+        text-align: left;
+        margin: 0 0 20px 0;
+      }
+      .button-wrap {
+        display: flex;
+      }
+      .white-button {
+        height: 50px;
+        width: auto;
+        padding: 0 40px;
+      }
+    }
+  }
+}
+
+
+.why-choose {
+    margin: 150px 0;
+    @media (max-width: 992px) {
+      margin: 100px 0;
+    }
+  
+    h2{
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: left;
+        margin: 0 0 30px 0;
+    }
+    h3{
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.2;
+        text-align: left;
+        margin: 0 0 40px 0;
+        @media (max-width: 992px) {
+            br{
+                display: none;
+            }
+        }
+    }
+
+    .why-choose-wrap {
+      overflow-x: auto;
+      margin-top: 40px;
+      .why-choose-row {
+        display: flex;
+        gap: 30px;
+        
+        flex-wrap: wrap;
+        @media (max-width: 992px) {
+            flex-wrap: nowrap;
+            width: 1965px;
+        }
+        > div {
+          width: calc(25% - 23px);
+          background: #2f2d34;
+          border-radius: 20px;
+          padding: 30px 20px;
+          background-image: url(/images/home/valueBack.svg);
+          background-position: top right;
+          background-size: contain;
+          background-repeat: no-repeat;
+          h2 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.2;
+            text-align: left;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+          }
+          p {
+            color: #ffffff99;
+            margin: 0;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.2;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    .why-choose-bottom{
+        margin-top: 40px;
+    }
+  }

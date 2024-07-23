@@ -79,7 +79,7 @@ const BusinessServices = () => {
                 aspirations.
               </motion.p>
               <div className="buttons-wrap">
-                <Link href="#" className="white-button">
+                <Link href="/business-consulting" className="white-button">
                   Improve operations now
                 </Link>
                 <div className="arrows">
