@@ -5,23 +5,23 @@
 }
 
 @font-face {
-  font-family: 'ZonaPro';
-  src: url('/fonts/ZonaPro-Regular.eot');
-  src: url('/fonts/ZonaPro-Regular.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/ZonaPro-Regular.woff2') format('woff2'),
-       url('/fonts/ZonaPro-Regular.woff') format('woff'),
-       url('/fonts/ZonaPro-Regular.ttf') format('truetype');
+  font-family: "ZonaPro";
+  src: url("/fonts/ZonaPro-Regular.eot");
+  src: url("/fonts/ZonaPro-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/ZonaPro-Regular.woff2") format("woff2"),
+    url("/fonts/ZonaPro-Regular.woff") format("woff"),
+    url("/fonts/ZonaPro-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ZonaPro';
-  src: url('/fonts/ZonaPro-Bold.eot');
-  src: url('/fonts/ZonaPro-Bold.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/ZonaPro-Bold.woff2') format('woff2'),
-       url('/fonts/ZonaPro-Bold.woff') format('woff'),
-       url('/fonts/ZonaPro-Bold.ttf') format('truetype');
+  font-family: "ZonaPro";
+  src: url("/fonts/ZonaPro-Bold.eot");
+  src: url("/fonts/ZonaPro-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/ZonaPro-Bold.woff2") format("woff2"),
+    url("/fonts/ZonaPro-Bold.woff") format("woff"),
+    url("/fonts/ZonaPro-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -33,7 +33,7 @@
 body {
   margin: 0;
   background: #191919;
-  font-family: 'ZonaPro', sans-serif;
+  font-family: "ZonaPro", sans-serif;
   @media (max-width: 992px) {
   }
   &.no-scroll {
@@ -50,11 +50,11 @@ body {
   }
 
   &::-webkit-scrollbar-track {
-    background: #2F2D34;
+    background: #2f2d34;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #EA4073;
+    background-color: #ea4073;
     border-radius: 100px;
   }
 }
@@ -121,8 +121,6 @@ a {
   overflow: hidden;
 }
 
-
-
 @keyframes flyAway {
   20% {
     transform: translateY(-160%) translateX(150%); /* Adjust values to control the ending position */
@@ -155,11 +153,9 @@ button {
   cursor: pointer;
 }
 
-
-
-.logo{
+.logo {
   display: flex;
-  img{
+  img {
     width: 75px;
     @media (max-width: 992px) {
       max-width: 130px;
@@ -167,7 +163,7 @@ button {
   }
 }
 
-.white-button{
+.white-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -179,21 +175,37 @@ button {
   height: 30px;
   width: 95px;
   color: #191919;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 63px;
 }
 
-.main-button{
+.main-button {
   display: flex;
   align-items: center;
-  gap:20px;
-  background: #EA4073;
+  justify-content: space-between;
+  gap: 20px;
+  background: #ea4073;
   padding: 5px 5px 5px 20px;
   border-radius: 60px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   text-align: left;
-  color: #FFFFFF;
+  color: #ffffff;
   width: fit-content;
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  padding: 10px;
+  width: 160px;
+  background: #ea4073;
+  border-radius: 60px;
 }
