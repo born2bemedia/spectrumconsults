@@ -154,6 +154,81 @@ const MarketingServices = () => {
               your brand's visibility.
             </p>
           </div>
+          <div>
+            <span className="number">5</span>
+            <h3>
+              SEO & <br />
+              SEM
+            </h3>
+            <p>
+              Improve your website's visibility and attract more traffic through
+              expert SEO and SEM strategies. We optimise your website and manage
+              paid search campaigns to ensure you rank higher and reach the
+              right audience.
+            </p>
+          </div>
+          <div>
+            <span className="number">6</span>
+            <h3>
+              Email <br />
+              Marketing
+            </h3>
+            <p>
+              Develop and execute effective email marketing campaigns that
+              convert. From crafting compelling newsletters to automated email
+              sequences, we ensure your email marketing efforts drive results.
+            </p>
+          </div>
+          <div>
+            <span className="number">7</span>
+            <h3>
+              Market Research <br />& Analysis
+            </h3>
+            <p>
+              Understand your market and stay ahead of the competition with
+              in-depth market research. We provide actionable insights into
+              market trends, customer behaviour, and competitive landscape to
+              inform your marketing strategies.
+            </p>
+          </div>
+          <div>
+            <span className="number">8</span>
+            <h3>
+              Campaign <br />
+              Management
+            </h3>
+            <p>
+              Plan and execute targeted marketing campaigns that deliver
+              results. Our campaign management services cover everything from
+              strategy development to execution and analysis, ensuring your
+              campaigns achieve their objectives.
+            </p>
+          </div>
+          <div>
+            <span className="number">9</span>
+            <h3>
+              Influencer <br />
+              Marketing
+            </h3>
+            <p>
+              Leverage the power of influencers to amplify your brand's reach.
+              We connect you with the right influencers and manage partnerships
+              to create authentic and impactful marketing campaigns.
+            </p>
+          </div>
+          <div>
+            <span className="number">10</span>
+            <h3>
+              Public <br />
+              Relations
+            </h3>
+            <p>
+              Build and maintain a positive public image with our strategic
+              public relations services. We help you craft press releases,
+              manage media relations, and handle crisis communication to keep
+              your brand in a favourable light.
+            </p>
+          </div>
         </Slider>
       </div>
     </section>

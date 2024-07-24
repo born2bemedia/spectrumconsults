@@ -152,6 +152,76 @@ const BusinessServices = () => {
               opportunities, and develop strategies to capture new markets.
             </p>
           </div>
+          <div>
+            <span className="number">5</span>
+            <h3>Business Process Reengineering</h3>
+            <p>
+              Transform your business processes to achieve significant
+              performance improvements. We help you redesign workflows,
+              eliminate inefficiencies, and leverage technology to drive growth.
+            </p>
+          </div>
+          <div>
+            <span className="number">6</span>
+            <h3>
+              Change <br />
+              Management
+            </h3>
+            <p>
+              Our change management services help you navigate organisational
+              changes smoothly and effectively. They also ensure your team is
+              aligned and engaged.
+            </p>
+          </div>
+          <div>
+            <span className="number">7</span>
+            <h3>
+              Performance <br />
+              Management
+            </h3>
+            <p>
+              Enhance your team's performance with our comprehensive management
+              solutions. We provide tools and strategies to set goals, measure
+              progress, and improve productivity.
+            </p>
+          </div>
+          <div>
+            <span className="number">8</span>
+            <h3>
+              Risk <br />
+              Management
+            </h3>
+            <p>
+              Identify, assess, and mitigate risks to protect your business. Our
+              risk management services help you develop robust strategies to
+              manage potential threats and ensure business continuity.
+            </p>
+          </div>
+          <div>
+            <span className="number">9</span>
+            <h3>
+              Leadership <br />
+              Development
+            </h3>
+            <p>
+              Cultivate strong leaders within your organisation. We offer
+              customised leadership development programs that equip your team
+              with the skills and confidence to lead effectively.
+            </p>
+          </div>
+          <div>
+            <span className="number">10</span>
+            <h3>
+              Innovation & <br />
+              Growth Strategy
+            </h3>
+            <p>
+              Foster a culture of innovation and drive sustainable growth. Our
+              experts work with you to identify new opportunities, create
+              innovative solutions, and implement growth strategies that keep
+              you ahead of the competition.
+            </p>
+          </div>
         </Slider>
       </div>
     </section>
