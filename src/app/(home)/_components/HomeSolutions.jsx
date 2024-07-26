@@ -52,7 +52,7 @@ const HomeSolutions = () => {
                 viewport={{ once: true }}
                 variants={fadeInUp}
               >
-                <Link href="#" className="main-button">
+                <Link href="/what-we-do" className="main-button">
                   <span>Book a free consultation</span>
                   <ButtonArrow />
                 </Link>
@@ -157,7 +157,7 @@ const HomeSolutions = () => {
                 viewport={{ once: true }}
                 variants={fadeInUp}
               >
-                <Link href="#" className="main-button">
+                <Link href="/industry-news" className="main-button">
                   <span>Read industry news</span>
                   <ButtonArrow />
                 </Link>
@@ -207,7 +207,7 @@ const HomeSolutions = () => {
                 viewport={{ once: true }}
                 variants={fadeInUp}
               >
-                <Link href="#" className="main-button">
+                <Link href="/articles" className="main-button">
                   <span>Explore articles</span>
                   <ButtonArrow />
                 </Link>
