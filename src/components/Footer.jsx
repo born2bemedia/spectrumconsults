@@ -47,7 +47,7 @@ const Footer = () => {
                 <h2>Expertise</h2>
                 <ul>
                   <li>
-                    <Link href="#">What We Do</Link>
+                    <Link href="/what-we-do">What We Do</Link>
                   </li>
                   <li>
                     <Link href="#">Client Results</Link>
@@ -56,10 +56,10 @@ const Footer = () => {
                 <h2>Our Solutions</h2>
                 <ul>
                   <li>
-                    <Link href="#">Business Consulting</Link>
+                    <Link href="/business-consulting">Business Consulting</Link>
                   </li>
                   <li>
-                    <Link href="#">Marketing Consulting</Link>
+                    <Link href="/marketing-consulting">Marketing Consulting</Link>
                   </li>
                 </ul>
               </div>
