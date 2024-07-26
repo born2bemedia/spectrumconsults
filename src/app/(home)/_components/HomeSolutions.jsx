@@ -104,7 +104,7 @@ const HomeSolutions = () => {
                 viewport={{ once: true }}
                 variants={fadeInUp}
               >
-                <Link href="#" className="main-button">
+                <Link href="/client-results" className="main-button">
                   <span>See client success</span>
                   <ButtonArrow />
                 </Link>
