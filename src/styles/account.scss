@@ -528,10 +528,16 @@
 
       .change-password {
         margin-top: 100px;
+        button{
+          margin: 30px 0 0 0;
+        }
         .password-data {
           display: flex;
           flex-wrap: wrap;
+          align-items: flex-start;
+          justify-content: flex-start;
           gap: 30px;
+          margin: 0;
           > div {
             width: 255px;
             position: relative;
