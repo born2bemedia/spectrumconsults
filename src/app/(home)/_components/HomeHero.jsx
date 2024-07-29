@@ -58,14 +58,14 @@ const HomeHero = () => {
               height={380}
               sizes="(max-width: 768px) 100%, 540px"
               alt="homeHero"
-              priority
+              loading="lazy"
             />
             <Image
               src={"/images/home/homeHeroPhoto.png"}
               width={273}
               height={380}
               alt="homeHero2"
-              priority
+              loading="lazy"
               className="home-photo"
               sizes="(max-width: 768px) 180px, 273px"
             />
