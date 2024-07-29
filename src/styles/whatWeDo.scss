@@ -395,6 +395,9 @@
         background-position: top right;
         background-size: contain;
         background-repeat: no-repeat;
+        @media (max-width: 1024px) and (min-width: 767px) {
+          width: calc(50% - 8px);
+        }
         h2 {
           color: #fff;
           font-size: 20px;
@@ -458,6 +461,9 @@
         text-align: left;
         margin: 0;
         width: 30%;
+        @media (max-width: 1024px) and (min-width:767px) {
+          font-size: 16px;
+        }
         @media (max-width: 767px) {
           width: 100%;
         }

@@ -131,6 +131,9 @@
         text-align: left;
         margin: 0;
         width: 20%;
+        @media (max-width: 1024px) and (min-width:767px) {
+          font-size: 24px;
+        }
         @media (max-width: 767px) {
           width: 100%;
         }
@@ -178,7 +181,9 @@
     max-width: 1110px;
     margin: -165px auto 0 auto;
     padding-left: 65px;
-    //padding-left: calc(((100vw - 1110px) / 2) + 65px);
+    @media (max-width: 1024px) and (min-width:767px) {
+      margin-top: -100px;
+    }
     @media (max-width: 767px) {
       padding-left: 50px;
       margin-top: -120px;
@@ -420,6 +425,9 @@
       text-align: left;
       margin: 0;
       width: 80%;
+      @media (max-width: 1024px) and (min-width:767px) {
+        font-size: 12px;
+      }
       @media (max-width: 767px) {
         width: 100%;
       }
