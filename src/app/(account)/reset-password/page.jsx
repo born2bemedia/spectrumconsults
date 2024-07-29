@@ -67,7 +67,7 @@ export default function PasswordResetRequest() {
                 type="submit"
                 disabled={isSubmitting}
               >
-                <span>Log in</span>
+                <span>Reset now</span>
                 <ButtonArrow />
               </button>
               {status && status.success && (

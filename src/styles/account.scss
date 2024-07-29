@@ -46,9 +46,15 @@
     }
 
     button {
-      width: 160px;
+      width: 180px;
       margin: 20px auto 0 auto;
       border: none;
+    }
+
+    .success{
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
     }
 
     > div {
@@ -235,11 +241,18 @@
         margin: 0 0 30px 0;
       }
 
+      .success{
+        text-align: left;
+        font-size: 14px;
+        color: #fff;
+      }
+
       form {
         .billing-data {
           display: flex;
           flex-wrap: wrap;
           gap: 30px;
+
           > div {
             width: 255px;
             position: relative;

@@ -49,7 +49,7 @@ export async function POST(request) {
           <thead>
             <tr>
               <td>
-                <img style="width: 100%" src="https://cms.modellistdigital.com/wp-content/uploads/2024/07/email-header.png" />
+                <img style="width: 100%" src="https://cms.spectrumconsults.io/wp-content/uploads/2024/07/Group-1597880594.png" />
               </td>
             </tr>
           </thead>
@@ -59,34 +59,18 @@ export async function POST(request) {
                 <h2 style="text-align: left; font-size: 20px;color: #202020;">Dear ${email},</h2>
                 <p style="text-align: left; font-size: 16px;color: #202020;"> Please click the following link to reset your password: </p>
                 <a style="text-align: center; display: block; width: 200px; padding:15px;background-color: #161616;
-                            border-radius: 50px; font-size: 16px;color: #ffffff;text-decoration: none;" href="http://modellistdigital.com/set-password?email=${email}&token=${token}">Reset password</a>
-                <h2 style="text-align: left; font-size: 20px;color: #202020;"> Best, <br /> The Modellist Digital Team </h2>
+                            border-radius: 50px; font-size: 16px;color: #ffffff;text-decoration: none;" href="https://spectrumconsults.io/set-password?email=${email}&token=${token}">Reset password</a>
+                <h2 style="text-align: left; font-size: 20px;color: #202020;"> Kind regards,<br />
+                        The Spectrum Consults Team </h2>
               </td>
             </tr>
           </tbody>
-          <tfoot >
-				<td style="padding: 12px 40px;background: #0C0C0C;background-size:cover;background-image:url(https://cms.modellistdigital.com/wp-content/uploads/2024/07/Group-80513.png);">
-					
-					<table style="width:100%">
-						
-						<td style="width: 50%; padding-right: 30px">
-							 <img src="https://cms.modellistdigital.com/wp-content/uploads/2024/07/logo.png" style="width:254px;">
-						</td>
-						<td style="width: 50%;color: #fff;font-size: 12px;">
-							<ul style="margin:0;padding: 0;list-style-image: url(https://cms.modellistdigital.com/wp-content/uploads/2024/07/Ellipse-335.png);">
-								<li>
-									<a href="tel:+442070433795" style="color: #fff;font-size: 12px;text-decoration: none;">+442070433795</a>
-								</li>
-								<li>
-									<a href="mailto:info@modellistdigital.com" style="color: #fff;font-size: 12px;text-decoration: none;">info@modellistdigital.com</a>
-								</li>
-							</ul>
-						</td>
-
-					</table>
-
-				</td>
-			  </tfoot>
+          <tfoot>
+            <td style="padding: 24px; background-color: #8C4CF5; color: #fff; font-size: 20px; text-align: center;font-weight: 600;">
+                Thanks for using
+              <a href="https://spectrumconsults.io" style="text-decoration: underline; color: #fff; font-size: 20px; font-weight: 600;">spectrumconsults.io</a>
+            </td>
+          </tfoot>
         </table>
       `,
     };

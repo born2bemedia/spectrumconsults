@@ -8,6 +8,7 @@ import ButtonArrow from "@/icons/ButtonArrow";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import JobButton from "@/components/JobButton";
 
 const CareersSlider = () => {
   const sliderRef1 = useRef(null);
@@ -142,7 +143,7 @@ const CareersSlider = () => {
                   </div>
                 </div>
 
-                <button className="white-button">Apply for a position</button>
+                <JobButton jobName={"Marketing Specialist"} />
               </div>
               <div className="slide2">
                 <h2>Business Analyst</h2>
@@ -218,7 +219,7 @@ const CareersSlider = () => {
                   </div>
                 </div>
 
-                <button className="white-button">Apply for a position</button>
+                <JobButton jobName={"Business Analyst"} />
               </div>
 
               <div className="slide3">
@@ -304,7 +305,7 @@ const CareersSlider = () => {
                   </div>
                 </div>
 
-                <button className="white-button">Apply for a position</button>
+                <JobButton jobName={"IT Project Manager"} />
               </div>
               <div className="slide4">
                 <h2>Human Resources Manager</h2>
@@ -384,7 +385,7 @@ const CareersSlider = () => {
                   </div>
                 </div>
 
-                <button className="white-button">Apply for a position</button>
+                <JobButton jobName={"Human Resources Manager"} />
               </div>
             </Slider>
           </div>

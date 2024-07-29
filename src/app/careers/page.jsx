@@ -3,6 +3,8 @@ import "@/styles/careers.scss";
 import CareersHero from "./_components/CareersHero";
 import CareersSlider from "./_components/CareersSlider";
 import CareersLast from "./_components/CareersLast";
+import JobPopup from "@/components/JobPopup";
+import ThanksPopup from "@/components/ThanksPopup";
 
 export const metadata = {
   title: "Careers at Spectrum Consults",
@@ -21,6 +23,8 @@ const ClientsResults = () => {
     <>
       <CareersHero />
       <CareersSlider />
+      <JobPopup />
+      <ThanksPopup />
     </>
   );
 };
