@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useRouter } from "next/navigation";
+import ButtonArrow from "@/icons/ButtonArrow";
 
 const ChangePasswordReset = ({ email, token }) => {
   const [changePasswordError, setChangePasswordError] = useState("");
@@ -123,10 +124,11 @@ const ChangePasswordReset = ({ email, token }) => {
               </div>
               <button
                 type="submit"
-                className="black-button"
+                className="main-button"
                 disabled={isSubmitting}
               >
-                Set new password
+                <span>Set new password</span>
+                <ButtonArrow />
               </button>
               {passwordChanged && (
                 <div className="success">Password changed successfully!</div>
