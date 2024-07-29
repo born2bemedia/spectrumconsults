@@ -5,7 +5,8 @@ export async function POST(request) {
   try {
     const requestBody = await request.text();
     const bodyJSON = JSON.parse(requestBody);
-    const { fullName, email, phone, position, message } = bodyJSON;
+    const { fullName, email, phone, position, message, resume, portfolio } =
+      bodyJSON;
 
     // Configure nodemailer with Gmail SMTP
     const transporter = nodemailer.createTransport({
@@ -19,12 +20,31 @@ export async function POST(request) {
       },
     });
 
+    const attachments = [];
+
+    if (resume) {
+      attachments.push({
+        filename: resume.filename, // Use the actual filename from the client
+        content: resume.base64, // Base64 encoded data
+        encoding: "base64",
+      });
+    }
+
+    if (portfolio) {
+      attachments.push({
+        filename: portfolio.filename, // Use the actual filename from the client
+        content: portfolio.base64, // Base64 encoded data
+        encoding: "base64",
+      });
+    }
+
     // Set up email data for the recipient
     const mailOptionsRecipient = {
       from: '"The Modellist Limited" <noreply@spectrumconsults.io>', // Sender address
       to: "noreply@spectrumconsults.io", // Change to your recipient's email
       subject: "Order Form Submission",
       text: `Name: ${fullName}\nEmail: ${email}\nPhone: ${phone}\nDesired position: ${position}\nMessage: ${message}`,
+      attachments: attachments,
     };
 
     // Set up email data for the client
@@ -91,6 +111,9 @@ export async function POST(request) {
     return NextResponse.json({ message: "Success: emails were sent" });
   } catch (error) {
     console.error("Error sending emails:", error);
-    return NextResponse.status(500).json({ message: "COULD NOT SEND MESSAGE", error: error.message });
+    return NextResponse.status(500).json({
+      message: "COULD NOT SEND MESSAGE",
+      error: error.message,
+    });
   }
 }

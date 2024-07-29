@@ -19,6 +19,7 @@
     "nodemailer": "^6.9.14",
     "react": "^18",
     "react-dom": "^18",
+    "react-phone-input-2": "^2.15.1",
     "react-select": "^5.8.0",
     "react-select-country-list": "^2.2.3",
     "react-slick": "^0.30.2",

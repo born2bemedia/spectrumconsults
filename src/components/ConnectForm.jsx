@@ -5,6 +5,8 @@ import { usePopup } from "@/context/PopupsContext";
 import ButtonArrow from "@/icons/ButtonArrow";
 import Select from "react-select";
 import ThanksPopup from "./ThanksPopup";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const ConnectForm = () => {
   const { setThanksPopupDisplay } = usePopup();

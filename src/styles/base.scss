@@ -213,16 +213,16 @@ button {
   color: #ffffff;
   width: fit-content;
   border: none;
-  &.white{
-    svg{
-      circle{
-        fill:#EA4073;
-        &:first-child{
-          fill:#FFFFFF;
+  &.white {
+    svg {
+      circle {
+        fill: #ea4073;
+        &:first-child {
+          fill: #ffffff;
         }
       }
-      path{
-        stroke:#EA4073;
+      path {
+        stroke: #ea4073;
       }
     }
   }
@@ -396,7 +396,7 @@ button {
   opacity: 0;
   pointer-events: none;
 
-  background: #000000B2;
+  background: #000000b2;
   backdrop-filter: blur(15px);
   &.opened {
     opacity: 1;
@@ -517,7 +517,7 @@ button {
   opacity: 0;
   pointer-events: none;
 
-  background: #000000B2;
+  background: #000000b2;
   backdrop-filter: blur(15px);
   &.opened {
     opacity: 1;
@@ -627,6 +627,51 @@ button {
           &.full {
             width: 100%;
           }
+
+          &.form-block {
+            display: flex;
+            flex-direction: column;
+            label {
+              margin: 0 0 10px 0;
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 1.2;
+              text-align: left;
+              color: #fff;
+              width: 100%;
+            }
+            .file-wrap {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              .upload-custom {
+                width: 100%;
+                color: #ffffff;
+                height: 50px;
+                border-radius: 25px;
+                background: #ffffff0d;
+                border: 1px solid #ffffff26;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.2;
+                text-align: left;
+                padding: 0 20px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                justify-content: center;
+              }
+              .fileName {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 1.2;
+                text-align: left;
+                color: #fff;
+                width: 100%;
+              }
+            }
+          }
+
           &.checkbox {
             width: 100%;
             .error {
