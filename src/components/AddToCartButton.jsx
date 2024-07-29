@@ -19,7 +19,7 @@ function AddToCartButton({ product }) {
     <>
       {existingIndex > -1 ? (
         <button disabled className="main-button">
-          <span>Already in cart</span>
+          <span>In cart</span>
           <ButtonCartIcon />
         </button>
       ) : (
