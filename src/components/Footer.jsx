@@ -31,13 +31,16 @@ const Footer = () => {
 
               <ul>
                 <li>
-                  <Link href="#">Number</Link>
+                  <Link href="tel:+442070434509">+442070434509</Link>
                 </li>
                 <li>
-                  <Link href="#">Email</Link>
+                  <Link href="mailto:info@spectrumconsults.io">info@spectrumconsults.io</Link>
                 </li>
                 <li>
-                  <Link href="#">Registered address</Link>
+                  <Link href="#">Registration address: 128 City Road, London, United Kingdom, EC1V 2NX</Link>
+                </li>
+                <li>
+                  <Link href="#">Office address: 62 Great Eastern Street, London, EC2A 3QR</Link>
                 </li>
               </ul>
             </div>

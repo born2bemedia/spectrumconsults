@@ -91,13 +91,13 @@
   }
   &__body {
     display: flex;
-    gap: 95px;
+    gap: 50px;
     @media (max-width: 767px) {
       flex-direction: column;
       gap: 40px;
     }
     .left {
-      width: 190px;
+      width: 270px;
       display: flex;
       flex-direction: column;
       gap: 40px;
@@ -122,7 +122,7 @@
       }
     }
     .right {
-      width: calc(100% - 285px);
+      width: calc(100% - 320px);
       display: flex;
       gap: 60px;
       @media (max-width: 767px) {
@@ -142,6 +142,11 @@
           height: 250px;
           background: #d9d9d9;
           border-radius: 20px;
+          overflow: hidden;
+          iframe{
+            border: none;
+            width: 100%;
+          }
         }
       }
     }
