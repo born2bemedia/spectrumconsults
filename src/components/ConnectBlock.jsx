@@ -47,7 +47,7 @@ export const ConnectBlock = ({ title, subtitle }) => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <img src="/images/home/connect.webp" />
+            <Image width={540} height={790} src="/images/home/connect.webp" alt="connect" />
           </motion.div>
         </div>
       </div>

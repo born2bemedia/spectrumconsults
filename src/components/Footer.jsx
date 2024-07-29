@@ -19,13 +19,13 @@ const Footer = () => {
 
               <div className="soc">
                 <Link href="#">
-                  <img src="/images/facebook.svg" />
+                  <img src="/images/facebook.svg" alt="facebook" />
                 </Link>
                 <Link href="#">
-                  <img src="/images/instagram.svg" />
+                  <img src="/images/instagram.svg" alt="instagram" />
                 </Link>
                 <Link href="#">
-                  <img src="/images/x.svg" />
+                  <img src="/images/x.svg" alt="x"/>
                 </Link>
               </div>
 

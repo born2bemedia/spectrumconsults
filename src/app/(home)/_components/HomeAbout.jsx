@@ -41,6 +41,7 @@ const HomeAbout = () => {
           viewport={{ once: true }}
           variants={fadeInUp}
           src="/images/home/homeAbout1.webp"
+          alt="homeAbout1"
         ></motion.img>
 
         <div className="home-about__bottom">
@@ -74,6 +75,7 @@ const HomeAbout = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
+            alt="homeAbout2"
           ></motion.img>
         </div>
       </div>

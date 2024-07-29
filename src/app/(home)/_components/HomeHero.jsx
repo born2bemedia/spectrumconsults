@@ -56,6 +56,7 @@ const HomeHero = () => {
               src={"/images/home/homeHero.webp"}
               width={540}
               height={380}
+              alt="homeHero"
             />
           </motion.div>
         </div>
