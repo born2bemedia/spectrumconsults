@@ -21,15 +21,15 @@ export async function POST(request) {
 
     // Set up email data for the recipient
     const mailOptionsRecipient = {
-      from: '"The Modellist Limited" <noreply@modellistdigital.com>', // Sender address
-      to: "noreply@modellistdigital.com", // Change to your recipient's email
+      from: '"The Modellist Limited" <noreply@spectrumconsults.io>', // Sender address
+      to: "noreply@spectrumconsults.io", // Change to your recipient's email
       subject: "Get Quote Form Submission",
       text: `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nService: ${service}\nBudget: ${budget}\nDescription: ${description}\nMessage: ${comment}`,
     };
 
     // Set up email data for the client
     const mailOptionsClient = {
-      from: '"The Modellist Limited" <noreply@modellistdigital.com>', // Sender address
+      from: '"The Modellist Limited" <noreply@spectrumconsults.io>', // Sender address
       to: email, // Client's email
       subject: "Your quote request has been received",
       html: `

@@ -21,15 +21,15 @@ export async function POST(request) {
 
     // Set up email data for the recipient
     const mailOptionsRecipient = {
-      from: '"Spectrum Consults" <noreply@spectrumconsults.com>', // Sender address
-      to: "noreply@spectrumconsults.com", // Change to your recipient's email
-      subject: "Contact Form Submission",
+      from: '"Spectrum Consults" <noreply@spectrumconsults.io>', // Sender address
+      to: "noreply@spectrumconsults.io", // Change to your recipient's email
+      subject: "Thank You for Contacting Spectrum Consults",
       text: `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${comment}`,
     };
 
     // Set up email data for the client
     const mailOptionsClient = {
-      from: '"Spectrum Consults" <noreply@spectrumconsults.com>', // Sender address
+      from: '"Spectrum Consults" <noreply@spectrumconsults.io>', // Sender address
       to: email, // Client's email
       subject: "Request received - We're here to help!",
       html: `
