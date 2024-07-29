@@ -7,6 +7,7 @@ import OperationalExcellence from "./Services/OperationalExcellence";
 import FinancialOptimization from "./Services/FinancialOptimization";
 import CustomerExperienceManagement from "./Services/CustomerExperienceManagement";
 import TechnologyDigitalTransformation from "./Services/TechnologyDigitalTransformation";
+import Products from "@/components/Products";
 
 const ServicesTabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -84,11 +85,21 @@ const ServicesTabs = () => {
             <div className="tabs-content">
               <img src="/images/consulting/tabsBack.svg" />
               <img src="/images/consulting/tabsBackMob.svg" />
-              {activeTab == "tab1" && <StrategicPlaning />}
-              {activeTab == "tab2" && <OperationalExcellence />}
-              {activeTab == "tab3" && <FinancialOptimization />}
-              {activeTab == "tab4" && <CustomerExperienceManagement />}
-              {activeTab == "tab5" && <TechnologyDigitalTransformation />}
+              {activeTab == "tab1" && (
+                <Products category={"strategic-planning-development"} />
+              )}
+              {activeTab == "tab2" && (
+                <Products category={"operational-excellence"} />
+              )}
+              {activeTab == "tab3" && (
+                <Products category={"financial-optimization"} />
+              )}
+              {activeTab == "tab4" && (
+                <Products category={"customer-experience-management"} />
+              )}
+              {activeTab == "tab5" && (
+                <Products category={"technology-digital-transformation"} />
+              )}
             </div>
           </div>
         </div>

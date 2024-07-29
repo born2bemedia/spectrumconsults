@@ -5,6 +5,7 @@ import { Montserrat } from "next/font/google";
 import { PopupsProvider } from "@/context/PopupsContext";
 import { CartProvider } from "@/context/CartContext";
 import { AuthProvider } from "@/context/AuthContext";
+import Preloader from "@/components/Preloader";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <AuthProvider>
           <CartProvider>
             <PopupsProvider>
+              <Preloader />
               <Header />
               <main>{children}</main>
               <Footer />

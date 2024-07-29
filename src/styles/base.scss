@@ -168,7 +168,7 @@ button {
 .logo {
   display: flex;
   img {
-    width: 75px;
+    width: 190px;
     @media (max-width: 992px) {
       max-width: 130px;
     }
@@ -362,5 +362,127 @@ button {
         display: none;
       }
     }
+  }
+}
+
+.thanks-popup-wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  pointer-events: none;
+
+  background: #000000cc;
+  backdrop-filter: blur(25px);
+  &.opened {
+    opacity: 1;
+    pointer-events: all;
+    transition: all 0.5s;
+    .popup-inner {
+      transform: translate(-50%, -50%) scale(1);
+      transition: all 0.5s;
+    }
+  }
+  .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+    min-height: 100%;
+  }
+
+  .popup-inner {
+    transition: all 0.5s;
+    width: 540px;
+    max-width: 95%;
+    background: #ffffff;
+    border: 1px solid #ffffff33;
+    padding: 50px;
+    border-radius: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 95vh;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    &:-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
+    @media (max-width: 992px) {
+      padding: 40px 24px;
+    }
+    .popup-close {
+      position: absolute;
+      right: 40px;
+      top: 40px;
+      cursor: pointer;
+      @media (max-width: 992px) {
+        top: 24px;
+        right: 24px;
+      }
+    }
+
+    .success {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      h3 {
+        color: #161616;
+        margin: 10px 0 10px 0;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.2;
+        text-align: center;
+      }
+      p {
+        margin: 0;
+        color: #161616;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.23px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.thankyou-page {
+  margin: 150px 0;
+  h1 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+  }
+  h2 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 0 40px 0;
+    @media (max-width: 767px) {
+      br {
+        display: none;
+      }
+    }
+  }
+  a{
+    margin: 0 auto;
   }
 }

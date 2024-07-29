@@ -1,0 +1,46 @@
+"use client";
+import Link from "next/link";
+import { fetchProductsByCategory } from "@/app/api/products";
+import AddToCartButton from "./AddToCartButton";
+import { useEffect, useState } from "react";
+
+const Products = ({ category, quantity = 4 }) => {
+  const [products, setProducts] = useState("");
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const data = await fetchProductsByCategory(category, quantity);
+        console.log(data);
+        setProducts(data);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, [category]);
+
+  return (
+    <>
+      {products.length > 0 && (
+        <div className={`${loading && "loading"} services-row`}>
+          {products.map((product) => (
+            <div className="service" key={product.id}>
+              <div>
+                <h3>{product.title}</h3>
+                <p dangerouslySetInnerHTML={{ __html: product.content }} />
+              </div>
+              <AddToCartButton product={product} />
+            </div>
+          ))}
+        </div>
+      )}
+    </>
+  );
+};
+
+export default Products;

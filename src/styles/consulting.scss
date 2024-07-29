@@ -535,6 +535,11 @@
         flex-wrap: wrap;
         align-items: flex-start;
         flex-wrap: wrap;
+        opacity: 1;
+        transition: all 0.5s;
+        &.loading{
+          opacity: 0;
+        }
         > .service {
           background: #2f2d34;
           border-radius: 20px;

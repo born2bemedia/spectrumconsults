@@ -7,6 +7,7 @@ import DigitalMarketing from "./Services/DigitalMarketing";
 import ContentCommunication from "./Services/ContentCommunication";
 import MarketResearchAnalysis from "./Services/MarketResearchAnalysis";
 import CampaignManagementExecution from "./Services/CampaignManagementExecution";
+import Products from "@/components/Products";
 
 const ServicesTabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -80,11 +81,21 @@ const ServicesTabs = () => {
             <div className="tabs-content">
               <img src="/images/consulting/tabsBack.svg" />
               <img src="/images/consulting/tabsBackMob.svg" />
-              {activeTab == "tab1" && <BrandStrategyDevelopment />}
-              {activeTab == "tab2" && <DigitalMarketing />}
-              {activeTab == "tab3" && <ContentCommunication />}
-              {activeTab == "tab4" && <MarketResearchAnalysis />}
-              {activeTab == "tab5" && <CampaignManagementExecution />}
+              {activeTab == "tab1" && (
+                <Products category={"brand-strategy-development"} />
+              )}
+              {activeTab == "tab2" && (
+                <Products category={"digital-marketing-online-presence"} />
+              )}
+              {activeTab == "tab3" && (
+                <Products category={"content-communication"} />
+              )}
+              {activeTab == "tab4" && (
+                <Products category={"market-research-analysis"} />
+              )}
+              {activeTab == "tab5" && (
+                <Products category={"campaign-management-execution"} />
+              )}
             </div>
           </div>
         </div>
