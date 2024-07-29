@@ -53,12 +53,21 @@ const HomeHero = () => {
             className="col-02"
           >
             <Image
-              src={"/images/home/homeHero.webp"}
+              src={"/images/home/homeHero.svg"}
               width={540}
               height={380}
               sizes="(max-width: 768px) 100%, 540px"
               alt="homeHero"
               priority
+            />
+            <Image
+              src={"/images/home/homeHeroPhoto.png"}
+              width={273}
+              height={380}
+              alt="homeHero2"
+              priority
+              className="home-photo"
+              sizes="(max-width: 768px) 180px, 273px"
             />
           </motion.div>
         </div>

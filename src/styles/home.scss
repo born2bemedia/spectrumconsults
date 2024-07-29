@@ -50,11 +50,22 @@
       }
     }
     .col-02 {
+      position: relative;
       img {
-        margin-top: -50px;
         height: auto;
+        position: relative;
+        z-index: 0;
         @media (max-width: 767px) {
           margin: 0;
+        }
+        &:last-child{
+          position: absolute;
+          z-index: 1;
+          right: 25px;
+          bottom: 0;
+          @media (max-width: 767px) {
+           max-width: 180px;
+          }
         }
       }
     }
