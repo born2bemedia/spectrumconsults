@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import ButtonArrow from "@/icons/ButtonArrow";
 
-const ResultsLast = () => {
+const CareersLast = () => {
   return (
     <section className="results-last">
       <div className="_container">
@@ -37,4 +37,4 @@ const ResultsLast = () => {
   );
 };
 
-export default ResultsLast;
+export default CareersLast;

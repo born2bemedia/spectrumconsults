@@ -259,7 +259,7 @@ const HomeSolutions = () => {
                 viewport={{ once: true }}
                 variants={fadeInUp}
               >
-                <Link href="#" className="main-button">
+                <Link href="/careers" className="main-button">
                   <span>View open positions</span>
                   <ButtonArrow />
                 </Link>

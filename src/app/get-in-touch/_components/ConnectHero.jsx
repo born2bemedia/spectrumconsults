@@ -6,11 +6,11 @@ import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import ButtonArrow from "@/icons/ButtonArrow";
 
-const HomeHero = () => {
+const ConnectHero = () => {
   return (
-    <section className="home-hero">
+    <section className="connect-hero">
       <div className="_container">
-        <div className="home-hero__body">
+        <div className="connect-hero__body">
           <div className="col-01">
             <motion.h1
               initial="hidden"
@@ -18,9 +18,8 @@ const HomeHero = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              Start <span>journey</span>
-              <br /> toward success with
-              <br /> Spectrum Consults
+              Connect with <br />
+              Spectrum Consults
             </motion.h1>
             <motion.h2
               initial="hidden"
@@ -28,21 +27,13 @@ const HomeHero = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              Enrol now and see how we can
-              <br /> transform your future.
+              We value your interest in Spectrum Consults and are here to assist
+              you. We're eager to hear from you if you have a question, need
+              more information about our services, or want to discuss a
+              potential collaboration. Use the contact form below to get in
+              touch, or reach out to us directly through our contact details and
+              social media channels.
             </motion.h2>
-            <motion.div
-              className="button-wrap"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-            >
-              <Link href="/get-in-touch" className="main-button">
-                <span>Book a free consultation</span>
-                <ButtonArrow />
-              </Link>
-            </motion.div>
           </div>
 
           <motion.div
@@ -53,7 +44,7 @@ const HomeHero = () => {
             className="col-02"
           >
             <Image
-              src={"/images/home/homeHero.webp"}
+              src={"/images/connect/connectHero.webp"}
               width={540}
               height={380}
             />
@@ -64,4 +55,4 @@ const HomeHero = () => {
   );
 };
 
-export default HomeHero;
+export default ConnectHero;

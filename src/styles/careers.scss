@@ -1,4 +1,4 @@
-.results-hero {
+.careers-hero {
   margin: 80px 0 150px 0;
   @media (max-width: 767px) {
     margin: 40px 0 150px 0;
@@ -72,7 +72,7 @@
   }
 }
 
-.results-last {
+.careers-last {
   margin: 150px 0;
   @media (max-width: 767px) {
     margin: 100px 0;
@@ -106,7 +106,7 @@
   }
 }
 
-.results-wrap {
+.careers-wrap {
   margin: 150px 0;
   overflow: hidden;
   @media (max-width: 767px) {
@@ -141,33 +141,21 @@
       border-radius: 60px;
     }
 
-    .results-info {
+    .careers-info {
       display: flex;
       gap: 70x;
       align-items: center;
+      justify-content: flex-end;
       position: relative;
       z-index: 1;
       @media (max-width: 767px) {
         flex-direction: column;
         gap: 20px;
       }
-      h2 {
-        color: #ffffff;
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 1.2;
-        text-align: left;
-        margin: 0;
-        @media (max-width: 767px) {
-          width: 100%;
-          font-size: 24px;
-        }
-      }
       .buttons-wrap {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 25%;
         @media (max-width: 767px) {
           width: 100%;
           flex-direction: column;
@@ -195,10 +183,20 @@
     }
   }
 
-  .results-slider-wrap {
-    margin-top: 30px;
+  .careers-slider-wrap {
+    margin-top: -45px;
+    position: relative;
+    z-index: 0;
     @media (max-width: 767px) {
+        margin: 30px 0 0 0;
     }
+
+    .white-button {
+      width: auto;
+      height: auto;
+      padding: 20px 40px;
+    }
+
     .slick-slider {
       @media (max-width: 767px) {
       }
@@ -215,15 +213,48 @@
             > div {
               height: 100% !important;
               > div {
-                height: 100% !important;
-                background: #2f2d34;
-                padding: 30px;
-                border-radius: 20px;
                 display: flex !important;
                 flex-direction: column;
-                align-items: flex-start;
-                @media (max-width: 767px) {
-                    padding: 20px;
+                align-items: center;
+                h2 {
+                  color: #ffffff;
+                  font-size: 36px;
+                  font-weight: 700;
+                  line-height: 1.2;
+                  text-align: left;
+                  margin: 0;
+                  text-align: center;
+                  @media (max-width: 767px) {
+                    font-size: 24px;
+                    text-align: left;
+                    width: 100%;
+                  }
+                }
+                .job-info {
+                  display: flex;
+                  gap: 30px;
+                  margin: 60px 0 40px 0;
+                  @media (max-width: 767px) {
+                    flex-direction: column;
+                    margin: 30px 0;
+                  }
+                  > div {
+                    width: calc(50% - 15px);
+
+                    background: #2f2d34;
+                    padding: 30px;
+                    border-radius: 20px;
+                    @media (max-width: 767px) {
+                      width: 100%;
+                    }
+                  }
+                }
+                .circle {
+                  display: block;
+                  width: 50px;
+                  height: 50px;
+                  background: #ea4073;
+                  border-radius: 50%;
                 }
                 h3 {
                   color: #ffffff;
@@ -231,7 +262,7 @@
                   font-weight: 700;
                   line-height: 1.2;
                   text-align: left;
-                  margin: 0 0 30px 0;
+                  margin: 20px 0 30px 0;
                   text-transform: uppercase;
                   display: flex;
                   align-items: center;

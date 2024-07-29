@@ -17,16 +17,18 @@ export const ConnectBlock = ({ title, subtitle }) => {
             viewport={{ once: true }}
             variants={fadeInUp}
             dangerouslySetInnerHTML={{ __html: title }}
+            
           />
-
-          <motion.p
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-          >
-            {subtitle}
-          </motion.p>
+          {subtitle && (
+            <motion.p
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+            >
+              {subtitle}
+            </motion.p>
+          )}
         </div>
         <div className="connect__bottom">
           <motion.div

@@ -6,11 +6,11 @@ import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import ButtonArrow from "@/icons/ButtonArrow";
 
-const HomeHero = () => {
+const CareersHero = () => {
   return (
-    <section className="home-hero">
+    <section className="careers-hero">
       <div className="_container">
-        <div className="home-hero__body">
+        <div className="careers-hero__body">
           <div className="col-01">
             <motion.h1
               initial="hidden"
@@ -18,9 +18,8 @@ const HomeHero = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              Start <span>journey</span>
-              <br /> toward success with
-              <br /> Spectrum Consults
+              Join Our Team at <br />
+              Spectrum Consults
             </motion.h1>
             <motion.h2
               initial="hidden"
@@ -28,21 +27,12 @@ const HomeHero = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              Enrol now and see how we can
-              <br /> transform your future.
+              We believe in fostering a dynamic and inclusive workplace where
+              innovation thrives and talent flourishes. Join a team dedicated to
+              driving growth, delivering excellence, and making a positive
+              impact. Explore our current job openings and discover how you can
+              contribute to our mission and grow your career with us.
             </motion.h2>
-            <motion.div
-              className="button-wrap"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-            >
-              <Link href="/get-in-touch" className="main-button">
-                <span>Book a free consultation</span>
-                <ButtonArrow />
-              </Link>
-            </motion.div>
           </div>
 
           <motion.div
@@ -53,7 +43,7 @@ const HomeHero = () => {
             className="col-02"
           >
             <Image
-              src={"/images/home/homeHero.webp"}
+              src={"/images/careers/careersHero.webp"}
               width={540}
               height={380}
             />
@@ -64,4 +54,4 @@ const HomeHero = () => {
   );
 };
 
-export default HomeHero;
+export default CareersHero;
