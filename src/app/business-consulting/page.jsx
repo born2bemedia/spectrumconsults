@@ -8,6 +8,18 @@ import CompletePackagesTop from "./_components/CompletePackagesTop";
 import CompletePackages from "./_components/CompletePackages";
 import ServicesTabs from "./_components/ServicesTabs";
 
+export const metadata = {
+  title: "Business Consulting Services",
+  description:
+    "Elevate your business with Spectrum Consults' comprehensive business consulting services. From strategic planning to operational excellence, we drive growth and success.",
+  openGraph: {
+    title: "Business Consulting Services",
+    description:
+      "Elevate your business with Spectrum Consults' comprehensive business consulting services. From strategic planning to operational excellence, we drive growth and success.",
+    images: "https://spectrumconsults.io/images/meta.png",
+  },
+};
+
 const BusinessConsulting = () => {
   return (
     <>

@@ -2,18 +2,18 @@ import { getPost } from "@/app/api/blog";
 import "@/styles/blog.scss";
 import Link from "next/link";
 
-/*export async function generateMetadata({ params: { slug } }) {
-  const post = await getPost(slug);
+export async function generateMetadata({ params: { slug } }) {
+  const post = await getPost(slug, "industry-news");
   return {
     title: post.seo_title,
     description: post.seo_description,
     openGraph: {
       title: post.seo_title,
       description: post.seo_description,
-      images: post.image,
+      images: "https://spectrumconsults.io/images/meta.png",
     },
   };
-}*/
+}
 
 export default async function PostPage({ params: { slug } }) {
   const post = await getPost(slug, "industry-news");

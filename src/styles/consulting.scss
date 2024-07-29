@@ -549,7 +549,7 @@
           justify-content: space-between;
           flex-direction: column;
           gap: 50px;
-          height: 380px;
+          height: 390px;
           @media (max-width: 767px) {
             width: 100%;
             height: auto;
@@ -571,11 +571,20 @@
           }
           p {
             color: #ffffff99;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 400;
             line-height: 1.2;
             text-align: left;
             margin: 0;
+          }
+          .price{
+            color: #EA4073;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.2;
+            text-align: left;
+            margin-top: 15px;
+            display: block;
           }
           .main-button{
             background: #FFFFFF;

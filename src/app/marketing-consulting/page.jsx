@@ -8,6 +8,18 @@ import CompletePackagesTop from "./_components/CompletePackagesTop";
 import CompletePackages from "./_components/CompletePackages";
 import ServicesTabs from "./_components/ServicesTabs";
 
+export const metadata = {
+  title: "Marketing Consulting Services",
+  description:
+    "Enhance your brand and drive engagement with Spectrum Consults' expert marketing consulting services. We offer tailored strategies to maximise your marketing ROI.",
+  openGraph: {
+    title: "Marketing Consulting Services",
+    description:
+      "Enhance your brand and drive engagement with Spectrum Consults' expert marketing consulting services. We offer tailored strategies to maximise your marketing ROI.",
+    images: "https://spectrumconsults.io/images/meta.png",
+  },
+};
+
 const BusinessConsulting = () => {
   return (
     <>

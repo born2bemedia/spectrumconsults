@@ -33,6 +33,11 @@ const Products = ({ category, quantity = 4 }) => {
               <div>
                 <h3>{product.title}</h3>
                 <p dangerouslySetInnerHTML={{ __html: product.content }} />
+                <span className="price">
+                  {product.from_price && 'From '}
+                  €{product.price}{" "}
+                  {product.price_prefix && product.price_prefix}
+                </span>
               </div>
               <AddToCartButton product={product} />
             </div>

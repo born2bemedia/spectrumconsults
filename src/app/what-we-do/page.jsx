@@ -9,6 +9,18 @@ import YourPath from "./_components/YourPath";
 import StandOut from "./_components/StandOut";
 import ClientCentricValues from "./_components/ClientCentricValues";
 
+export const metadata = {
+  title: "Our Approach and Services",
+  description:
+    "Learn about Spectrum Consults' unique approach to delivering top-tier consulting services. Explore how our expertise can help your business thrive.",
+  openGraph: {
+    title: "Our Approach and Services",
+    description:
+      "Learn about Spectrum Consults' unique approach to delivering top-tier consulting services. Explore how our expertise can help your business thrive.",
+    images: "https://spectrumconsults.io/images/meta.png",
+  },
+};
+
 const WhatWeDo = () => {
   return (
     <>

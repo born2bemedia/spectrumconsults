@@ -21,15 +21,15 @@ export async function POST(request) {
 
     // Set up email data for the recipient
     const mailOptionsRecipient = {
-      from: '"The Modellist Limited" <noreply@modellistdigital.com>', // Sender address
-      to: "noreply@modellistdigital.com", // Change to your recipient's email
+      from: '"Spectrum Consults" <noreply@spectrumconsults.com>', // Sender address
+      to: "noreply@spectrumconsults.com", // Change to your recipient's email
       subject: "Contact Form Submission",
       text: `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${comment}`,
     };
 
     // Set up email data for the client
     const mailOptionsClient = {
-      from: '"The Modellist Limited" <noreply@modellistdigital.com>', // Sender address
+      from: '"Spectrum Consults" <noreply@spectrumconsults.com>', // Sender address
       to: email, // Client's email
       subject: "Request received - We're here to help!",
       html: `
@@ -37,44 +37,34 @@ export async function POST(request) {
   <thead>
     <tr>
       <td>
-        <img style="width: 100%" src="https://cms.modellistdigital.com/wp-content/uploads/2024/07/email-header.png" />
+        <img style="width: 100%" src="https://cms.spectrumconsults.io/wp-content/uploads/2024/07/Group-1597880594.png" />
       </td>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td style="padding: 40px">
-        <h2 style="text-align: left; font-size: 20px;color:#202020;">Dear ${firstName} ${lastName},</h2>
-        <p style="text-align: left; font-size: 16px;color:#202020;"> Thank you for reaching out to us! We have received your request and our team is already on it. <br>
-          <br> You can expect a response shortly as we work to address your inquiry. <br> If you have any additional questions in the meantime, feel free to contact us at info@modellistdigital.com.
-        </p>
-        <h2 style="text-align: left; font-size: 20px;color:#202020;"> Best, <br /> The Modellist Digital Team </h2>
-      </td>
-    </tr>
-  </tbody>
-  <tfoot >
-				<td style="padding: 12px 40px;background: #0C0C0C;background-size:cover;background-image:url(https://cms.modellistdigital.com/wp-content/uploads/2024/07/Group-80513.png);">
-					
-					<table style="width:100%">
-						
-						<td style="width: 50%; padding-right: 30px">
-							 <img src="https://cms.modellistdigital.com/wp-content/uploads/2024/07/logo.png" style="width:254px;">
-						</td>
-						<td style="width: 50%;color: #fff;font-size: 12px;">
-							<ul style="margin:0;padding: 0;list-style-image: url(https://cms.modellistdigital.com/wp-content/uploads/2024/07/Ellipse-335.png);">
-								<li>
-									<a href="tel:+442070433795" style="color: #fff;font-size: 12px;text-decoration: none;">+442070433795</a>
-								</li>
-								<li>
-									<a href="mailto:info@modellistdigital.com" style="color: #fff;font-size: 12px;text-decoration: none;">info@modellistdigital.com</a>
-								</li>
-							</ul>
-						</td>
+  <tbody style="background: #F5F7F9;">
+                <tr>
+                  <td style="padding: 40px">
+                    <h2 style="text-align: left; font-size: 20px">Dear ${firstName},</h2>
+                    <p style="text-align: left; font-size: 16px">
+                       We appreciate you reaching out to Spectrum Consults for your consulting needs! Your request has been received, and we are looking forward to assisting you. Our team will review your information and contact you soon to discuss the details.<br><br>
 
-					</table>
-
-				</td>
-			  </tfoot>
+                      In the meantime, if you have any further details or specific preferences to share, please do not hesitate to let us know.<br><br>
+                      Thank you for choosing Spectrum Consults. We are dedicated to providing outstanding results tailored to your requirements.
+                    </p>
+            
+                    <h2 style="text-align: left; font-size: 16px">
+                        Kind regards,<br />
+                        The Spectrum Consults Team
+                    </h2>
+                  </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td style="padding: 24px; background-color: #8C4CF5; color: #fff; font-size: 20px; text-align: center;font-weight: 600;">
+            Thanks for using
+          <a href="https://smartcapital.es" style="text-decoration: underline; color: #fff; font-size: 20px; font-weight: 600;">smartcapital.es</a>
+        </td>
+      </tfoot>
 </table>
       `,
     };
