@@ -45,11 +45,7 @@ const HomeHero = () => {
             </motion.div>
           </div>
 
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
+          <div
             className="col-02"
           >
             <Image
@@ -69,7 +65,7 @@ const HomeHero = () => {
               className="home-photo"
               sizes="(max-width: 768px) 180px, 273px"
             />
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
