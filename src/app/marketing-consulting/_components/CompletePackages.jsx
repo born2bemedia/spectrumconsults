@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import ButtonArrow from "@/icons/ButtonArrow";
+import OrderButton from "@/components/OrderButton";
 
 const CompletePackages = () => {
   return (
@@ -44,10 +45,7 @@ const CompletePackages = () => {
                   identify target demographics and understand market trends.
                 </li>
               </ul>
-              <Link className="main-button" href="#">
-                <span>Order</span>
-                <ButtonArrow />
-              </Link>
+              <OrderButton packageItem={"Basic Marketing Package"} />
             </motion.div>
             <motion.div
               initial="hidden"
@@ -87,10 +85,7 @@ const CompletePackages = () => {
                   for email marketing campaigns.
                 </li>
               </ul>
-              <Link className="main-button" href="#">
-                <span>Order</span>
-                <ButtonArrow />
-              </Link>
+              <OrderButton packageItem={"Enhanced Marketing Package"} />
             </motion.div>
             <motion.div
               initial="hidden"
@@ -127,13 +122,10 @@ const CompletePackages = () => {
                 </li>
                 <li>
                   Video Marketing: Create engaging video content to capture your
-                  audience’s attention and enhance your digital presence.
+                  audience's attention and enhance your digital presence.
                 </li>
               </ul>
-              <Link className="main-button" href="#">
-                <span>Order</span>
-                <ButtonArrow />
-              </Link>
+              <OrderButton packageItem={"Professional Marketing Package"} />
             </motion.div>
           </div>
         </div>
@@ -158,10 +150,7 @@ const CompletePackages = () => {
               The Ultimate Marketing Package provides all previous services
               along with:
             </p>
-            <Link className="main-button" href="#">
-              <span>Order</span>
-              <ButtonArrow />
-            </Link>
+            <OrderButton packageItem={"Ultimate Marketing Package"} />
           </div>
           <div>
             <ul>

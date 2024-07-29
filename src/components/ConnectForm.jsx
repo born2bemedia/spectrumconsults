@@ -4,9 +4,10 @@ import * as Yup from "yup";
 import { usePopup } from "@/context/PopupsContext";
 import ButtonArrow from "@/icons/ButtonArrow";
 import Select from "react-select";
+import ThanksPopup from "./ThanksPopup";
 
 const ConnectForm = () => {
-  const { thanksPopupDisplay, setThanksPopupDisplay } = usePopup();
+  const { setThanksPopupDisplay } = usePopup();
 
   const contactMethods = [
     { value: "Email", label: "Email" },
@@ -84,10 +85,10 @@ const ConnectForm = () => {
     company: Yup.string(),
     description: Yup.string(),
     goals: Yup.string(),
-    time: Yup.string().required("Phone is required"),
-    timeline: Yup.string().required("Phone is required"),
-    budget: Yup.string().required("Phone is required"),
-    addintional: Yup.string().required("Phone is required"),
+    time: Yup.string().required("Preferred Contact Time is required"),
+    timeline: Yup.string().required("Project Timeline is required"),
+    budget: Yup.string().required("Budget Range is required"),
+    additional: Yup.string(),
     method: Yup.string().required("Contact Method is required"),
   });
 
@@ -101,7 +102,7 @@ const ConnectForm = () => {
     time: "",
     timeline: "",
     budget: "",
-    addintional: "",
+    additional: "",
     method: "",
   };
 
@@ -110,6 +111,7 @@ const ConnectForm = () => {
     { setSubmitting, resetForm, setStatus }
   ) => {
     try {
+      console.log("Submitting form with values:", values); // Added logging
       const response = await fetch("/api/emails/contact", {
         method: "POST",
         headers: {
@@ -117,170 +119,190 @@ const ConnectForm = () => {
         },
         body: JSON.stringify(values),
       });
-      console.log(JSON.stringify(values));
+
+      const result = await response.json(); // Await response.json() to log it
+
+      console.log("Response from server:", result); // Log server response
+
       if (response.ok) {
         setTimeout(() => {
-          console.log(JSON.stringify(values, null, 2));
+          console.log("Form submitted successfully:", values); // Added logging
           setThanksPopupDisplay(true);
           setSubmitting(false);
           resetForm();
           setStatus({ success: true });
         }, 400);
       } else {
+        console.error("Error submitting form:", response.statusText); // Added logging
         setStatus({ success: false });
       }
     } catch (error) {
-      console.error(error);
+      console.error("Error submitting form:", error); // Added logging
+      setStatus({ success: false });
+      setSubmitting(false);
     }
   };
 
   return (
-    <div className="request-form">
-      <Formik
-        initialValues={initialValues}
-        validationSchema={validationSchema}
-        onSubmit={handleSubmit}
-      >
-        {({ isSubmitting, status, setFieldValue, touched, errors }) => (
-          <Form>
-            <div>
-              <Field
-                name="name"
-                type="text"
-                placeholder="Name"
-                className={touched.name && errors.name ? "invalid" : ""}
-              />
-              <ErrorMessage name="name" component="div" className="error" />
-            </div>
+    <>
+      <div className="request-form">
+        <Formik
+          initialValues={initialValues}
+          validationSchema={validationSchema}
+          onSubmit={handleSubmit}
+        >
+          {({ isSubmitting, setFieldValue, touched, errors }) => (
+            <Form>
+              <div>
+                <Field
+                  name="name"
+                  type="text"
+                  placeholder="Name"
+                  className={touched.name && errors.name ? "invalid" : ""}
+                />
+                <ErrorMessage name="name" component="div" className="error" />
+              </div>
 
-            <div>
-              <Field
-                name="email"
-                type="email"
-                placeholder="Email"
-                className={touched.email && errors.email ? "invalid" : ""}
-              />
-              <ErrorMessage name="email" component="div" className="error" />
-            </div>
+              <div>
+                <Field
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  className={touched.email && errors.email ? "invalid" : ""}
+                />
+                <ErrorMessage name="email" component="div" className="error" />
+              </div>
 
-            <div>
-              <Field
-                name="phone"
-                type="tel"
-                placeholder="Phone"
-                className={touched.phone && errors.phone ? "invalid" : ""}
-              />
-              <ErrorMessage name="phone" component="div" className="error" />
-            </div>
+              <div>
+                <Field
+                  name="phone"
+                  type="tel"
+                  placeholder="Phone"
+                  className={touched.phone && errors.phone ? "invalid" : ""}
+                />
+                <ErrorMessage name="phone" component="div" className="error" />
+              </div>
 
-            <div>
-              <Field
-                name="company"
-                type="text"
-                placeholder="Company Name"
-                className={touched.company && errors.company ? "invalid" : ""}
-              />
-              <ErrorMessage name="company" component="div" className="error" />
-            </div>
+              <div>
+                <Field
+                  name="company"
+                  type="text"
+                  placeholder="Company Name"
+                  className={touched.company && errors.company ? "invalid" : ""}
+                />
+                <ErrorMessage
+                  name="company"
+                  component="div"
+                  className="error"
+                />
+              </div>
 
-            <div className="full">
-              <Field
-                name="description"
-                as="textarea"
-                placeholder="Project/Business Description"
-                className={
-                  touched.description && errors.description ? "invalid" : ""
-                }
-              />
-              <ErrorMessage
-                name="description"
-                component="div"
-                className="error"
-              />
-            </div>
+              <div className="full">
+                <Field
+                  name="description"
+                  as="textarea"
+                  placeholder="Project/Business Description"
+                  className={
+                    touched.description && errors.description ? "invalid" : ""
+                  }
+                />
+                <ErrorMessage
+                  name="description"
+                  component="div"
+                  className="error"
+                />
+              </div>
 
-            <div className="full">
-              <Field
-                name="goals"
-                as="textarea"
-                placeholder="Goals and Objectives"
-                className={touched.goals && errors.goals ? "invalid" : ""}
-              />
-              <ErrorMessage name="goals" component="div" className="error" />
-            </div>
+              <div className="full">
+                <Field
+                  name="goals"
+                  as="textarea"
+                  placeholder="Goals and Objectives"
+                  className={touched.goals && errors.goals ? "invalid" : ""}
+                />
+                <ErrorMessage name="goals" component="div" className="error" />
+              </div>
 
-            <div className="full">
-              <Select
-                name="method"
-                options={contactMethods}
-                styles={customStyles}
-                className={`form-field ${
-                  touched.method && errors.method ? "invalid" : ""
-                }`}
-                onChange={(option) => setFieldValue("method", option.value)}
-                placeholder="Preferred Contact Method"
-              />
-              <ErrorMessage name="method" component="div" className="error" />
-            </div>
+              <div className="full">
+                <Select
+                  name="method"
+                  options={contactMethods}
+                  styles={customStyles}
+                  className={`form-field ${
+                    touched.method && errors.method ? "invalid" : ""
+                  }`}
+                  onChange={(option) => setFieldValue("method", option.value)}
+                  placeholder="Preferred Contact Method"
+                />
+                <ErrorMessage name="method" component="div" className="error" />
+              </div>
 
-            <div>
-              <Field
-                name="time"
-                type="text"
-                placeholder="Preferred Contact Time"
-                className={touched.time && errors.time ? "invalid" : ""}
-              />
-              <ErrorMessage name="time" component="div" className="error" />
-            </div>
+              <div>
+                <Field
+                  name="time"
+                  type="text"
+                  placeholder="Preferred Contact Time"
+                  className={touched.time && errors.time ? "invalid" : ""}
+                />
+                <ErrorMessage name="time" component="div" className="error" />
+              </div>
 
-            <div>
-              <Field
-                name="timeline"
-                type="text"
-                placeholder="Project Timeline"
-                className={touched.timeline && errors.timeline ? "invalid" : ""}
-              />
-              <ErrorMessage name="timeline" component="div" className="error" />
-            </div>
+              <div>
+                <Field
+                  name="timeline"
+                  type="text"
+                  placeholder="Project Timeline"
+                  className={
+                    touched.timeline && errors.timeline ? "invalid" : ""
+                  }
+                />
+                <ErrorMessage
+                  name="timeline"
+                  component="div"
+                  className="error"
+                />
+              </div>
 
-            <div>
-              <Field
-                name="budget"
-                type="text"
-                placeholder="Budget Range"
-                className={touched.budget && errors.budget ? "invalid" : ""}
-              />
-              <ErrorMessage name="budget" component="div" className="error" />
-            </div>
+              <div>
+                <Field
+                  name="budget"
+                  type="text"
+                  placeholder="Budget Range"
+                  className={touched.budget && errors.budget ? "invalid" : ""}
+                />
+                <ErrorMessage name="budget" component="div" className="error" />
+              </div>
 
-            <div>
-              <Field
-                name="additional"
-                type="text"
-                placeholder="Additional Information"
-                className={
-                  touched.additional && errors.additional ? "invalid" : ""
-                }
-              />
-              <ErrorMessage
-                name="additional"
-                component="div"
-                className="error"
-              />
-            </div>
+              <div>
+                <Field
+                  name="additional"
+                  type="text"
+                  placeholder="Additional Information"
+                  className={
+                    touched.additional && errors.additional ? "invalid" : ""
+                  }
+                />
+                <ErrorMessage
+                  name="additional"
+                  component="div"
+                  className="error"
+                />
+              </div>
 
-            <button
-              type="submit"
-              className="main-button"
-              disabled={isSubmitting}
-            >
-              <span>Submit inquiry</span>
-              <ButtonArrow />
-            </button>
-          </Form>
-        )}
-      </Formik>
-    </div>
+              <button
+                type="submit"
+                className="main-button"
+                disabled={isSubmitting}
+              >
+                <span>Submit inquiry</span>
+                <ButtonArrow />
+              </button>
+            </Form>
+          )}
+        </Formik>
+      </div>
+      <ThanksPopup />
+    </>
   );
 };
 

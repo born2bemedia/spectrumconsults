@@ -7,6 +7,8 @@ import WhyChoose from "./_components/WhyChoose";
 import CompletePackagesTop from "./_components/CompletePackagesTop";
 import CompletePackages from "./_components/CompletePackages";
 import ServicesTabs from "./_components/ServicesTabs";
+import OrderPopup from "@/components/OrderPopup";
+import ThanksPopup from "@/components/ThanksPopup";
 
 export const metadata = {
   title: "Business Consulting Services",
@@ -35,6 +37,8 @@ const BusinessConsulting = () => {
           "Ready to transform your business? Fill out the form below to get in touch with our expert consultants. Share your business challenges and goals, and we'll provide tailored solutions to help you achieve success. Let's start your journey toward operational excellence and strategic growth with Spectrum Consults."
         }
       />
+      <OrderPopup />
+      <ThanksPopup />
     </>
   );
 };

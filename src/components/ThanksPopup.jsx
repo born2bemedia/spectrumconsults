@@ -26,7 +26,7 @@ function ThanksPopup() {
         >
           <path
             d="M18 18.5L2 2.5M18 2.5L2 18.5"
-            stroke="#161616"
+            stroke="#ffffff"
             strokeWidth="4"
             strokeLinecap="round"
           />

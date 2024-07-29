@@ -7,6 +7,8 @@ import WhyChoose from "./_components/WhyChoose";
 import CompletePackagesTop from "./_components/CompletePackagesTop";
 import CompletePackages from "./_components/CompletePackages";
 import ServicesTabs from "./_components/ServicesTabs";
+import OrderPopup from "@/components/OrderPopup";
+import ThanksPopup from "@/components/ThanksPopup";
 
 export const metadata = {
   title: "Marketing Consulting Services",
@@ -32,9 +34,11 @@ const BusinessConsulting = () => {
       <ConnectBlock
         title={"Elevate Your Marketing <br/>with Spectrum Consults"}
         subtitle={
-          "Looking to boost your brand’s presence and drive impactful results? Complete the form below to connect with our marketing consultants. Tell us your marketing needs and objectives, and we’ll craft customised strategies to propel your brand forward. Partner with Spectrum Consults for innovative marketing solutions that deliver measurable success."
+          "Looking to boost your brand's presence and drive impactful results? Complete the form below to connect with our marketing consultants. Tell us your marketing needs and objectives, and we’ll craft customised strategies to propel your brand forward. Partner with Spectrum Consults for innovative marketing solutions that deliver measurable success."
         }
       />
+      <OrderPopup />
+      <ThanksPopup />
     </>
   );
 };

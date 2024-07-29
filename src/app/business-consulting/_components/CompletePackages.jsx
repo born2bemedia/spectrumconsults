@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animations";
 import ButtonArrow from "@/icons/ButtonArrow";
+import OrderButton from "@/components/OrderButton";
 
 const CompletePackages = () => {
   return (
@@ -43,10 +44,7 @@ const CompletePackages = () => {
                   basic mitigation strategies.
                 </li>
               </ul>
-              <Link className="main-button" href="#">
-                <span>Order</span>
-                <ButtonArrow />
-              </Link>
+              <OrderButton packageItem={"Starter Business Package"} />
             </motion.div>
             <motion.div
               initial="hidden"
@@ -81,10 +79,7 @@ const CompletePackages = () => {
                   you understand and improve your financial standing.
                 </li>
               </ul>
-              <Link className="main-button" href="#">
-                <span>Order</span>
-                <ButtonArrow />
-              </Link>
+              <OrderButton packageItem={"Growth Business Package"} />
             </motion.div>
             <motion.div
               initial="hidden"
@@ -117,10 +112,7 @@ const CompletePackages = () => {
                   interactions and satisfaction with targeted strategies.
                 </li>
               </ul>
-              <Link className="main-button" href="#">
-                <span>Order</span>
-                <ButtonArrow />
-              </Link>
+              <OrderButton packageItem={"Advanced Business Package"} />
             </motion.div>
           </div>
         </div>
@@ -145,10 +137,7 @@ const CompletePackages = () => {
               Our most comprehensive offering, the Premium Business Package,
               includes:
             </p>
-            <Link className="main-button" href="#">
-              <span>Order</span>
-              <ButtonArrow />
-            </Link>
+            <OrderButton packageItem={"Premium Business Package"} />
           </div>
           <div>
             <ul>

@@ -5,7 +5,7 @@ export async function POST(request) {
   try {
     const requestBody = await request.text();
     const bodyJSON = JSON.parse(requestBody);
-    const { firstName, lastName, email, phone, service, budget, ideaDescription, deadline, targetAudience, platform, marketingGoal, comment } = bodyJSON;
+    const { fullName, email, phone, service, message } = bodyJSON;
 
     // Configure nodemailer with Gmail SMTP
     const transporter = nodemailer.createTransport({
@@ -24,11 +24,11 @@ export async function POST(request) {
       from: '"The Modellist Limited" <noreply@spectrumconsults.io>', // Sender address
       to: "noreply@spectrumconsults.io", // Change to your recipient's email
       subject: "Order Form Submission",
-      text: `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nService: ${service}\nBudget: ${budget}\nIdea Description: ${ideaDescription}\nDeadline: ${deadline}\nTarget Audience: ${targetAudience}\nPlatform: ${platform}\nMarketing Goal: ${marketingGoal}\nMessage: ${comment}`,
+      text: `Name: ${fullName}\nEmail: ${email}\nPhone: ${phone}\nService: ${service}\nMessage: ${message}`,
     };
 
     // Set up email data for the client
-    const mailOptionsClient = {
+    /*const mailOptionsClient = {
       from: '"The Modellist Limited" <noreply@spectrumconsults.io>', // Sender address
       to: email, // Client's email
       subject: "Your request has been received",
@@ -81,12 +81,12 @@ export async function POST(request) {
 			  </tfoot>
 </table>
       `,
-    };
+    };*/
 
     // Send email to the recipient
     await transporter.sendMail(mailOptionsRecipient);
     // Send email to the client
-    await transporter.sendMail(mailOptionsClient);
+    //await transporter.sendMail(mailOptionsClient);
 
     return NextResponse.json({ message: "Success: emails were sent" });
   } catch (error) {
