@@ -41,7 +41,7 @@ const PriceList = () => {
               variants={fadeInUp}
               className="button-wrap"
             >
-              <Link href="#" className="white-button">Download price list</Link>
+              <Link href="/pricelist/Spectrum_Consults_The Complete_Price_List.pdf" target="_blank" className="white-button">Download price list</Link>
             </motion.div>
           </div>
         </div>
