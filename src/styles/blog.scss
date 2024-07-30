@@ -1,6 +1,8 @@
+@import "mixin";
+
 .blog-hero {
   margin: 80px 0 100px 0;
-  @media (max-width: 767px) {
+  @media (max-width: rem(767)) {
     margin: 40px 0 50px 0;
   }
 
@@ -10,24 +12,24 @@
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 60px;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       gap: 20px;
     }
     .col-01 {
       width: calc(50% - 30px);
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
       h1 {
-        font-size: 36px;
+        font-size: rem(36);
         font-weight: 700;
         line-height: 1.2;
         text-align: left;
         text-transform: uppercase;
         color: #ffffff;
         margin: 0 0 25px 0;
-        @media (max-width: 767px) {
-          font-size: 24px;
+        @media (max-width: rem(767)) {
+          font-size: rem(24);
           br {
             display: none;
           }
@@ -43,18 +45,18 @@
     }
     .col-02 {
       width: calc(50% - 30px);
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
       p {
         color: #ffffff;
-        font-size: 15px;
+        font-size: rem(15);
         font-weight: 400;
         line-height: 1.2;
         text-align: left;
         margin: 0 0 40px 0;
-        @media (max-width: 767px) {
-          font-size: 15px;
+        @media (max-width: rem(767)) {
+          font-size: rem(15);
           margin-bottom: 30px;
           br {
             display: none;
@@ -67,7 +69,7 @@
 
 .blog-loop {
   margin: 100px 0 150px 0;
-  @media (max-width: 767px) {
+  @media (max-width: rem(767)) {
     margin: 50px 0 100px 0;
   }
   &__body {
@@ -76,7 +78,7 @@
     background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       padding: 80px 20px 0 20px;
       background-image: url(/images/blog/blogBackMob.svg);
     }
@@ -98,13 +100,13 @@
         @media (max-width: 1024px) and (min-width:767px) {
           width: calc(50% - 10px);
         }
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
           width: 100%;
           height: auto;
         }
         h3 {
           color: #ffffff;
-          font-size: 20px;
+          font-size: rem(20);
           font-weight: 700;
           line-height: 1.2;
           text-align: left;
@@ -113,7 +115,7 @@
         }
         p {
           color: #ffffff99;
-          font-size: 16px;
+          font-size: rem(16);
           font-weight: 400;
           line-height: 1.2;
           text-align: left;
@@ -122,7 +124,7 @@
         .main-button {
           background: #ffffff;
           color: #191919;
-          width: 190px;
+          width: rem(190);
           svg {
             circle {
               fill: #ea4073;
@@ -138,7 +140,7 @@
         gap: 30px;
         > .post-card {
           width: calc(50% - 15px);
-          @media (max-width: 767px) {
+          @media (max-width: rem(767)) {
             width: 100%;
             height: auto;
           }
@@ -150,13 +152,13 @@
 
 .post-inner {
   margin: 80px 0 100px 0;
-  @media (max-width: 767px) {
+  @media (max-width: rem(767)) {
     margin: 50px 0 100px 0;
   }
   &__body {
     display: flex;
     gap: 50px;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       gap: 30px;
       flex-direction: column;
     }
@@ -165,19 +167,19 @@
       display: flex;
       gap: 40px;
       flex-direction: column;
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
       h1 {
         color: #ffffff;
-        font-size: 36px;
+        font-size: rem(36);
         font-weight: 700;
         line-height: 1.2;
         text-align: left;
         margin: 0;
         text-transform: uppercase;
-        @media (max-width: 767px) {
-          font-size: 24px;
+        @media (max-width: rem(767)) {
+          font-size: rem(24);
         }
       }
       div {
@@ -186,19 +188,19 @@
         background-position: top left;
         background-size: contain;
         background-repeat: no-repeat;
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
           display: none;
         }
       }
     }
     article {
       width: calc(50% - 25px);
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
       p {
         color: #ffffff;
-        font-size: 16px;
+        font-size: rem(16);
         font-weight: 400;
         line-height: 1.2;
         text-align: left;
@@ -206,7 +208,7 @@
       }
       h2 {
         color: #ffffff;
-        font-size: 24px;
+        font-size: rem(24);
         font-weight: 700;
         line-height: 1.2;
         text-align: left;
@@ -220,7 +222,7 @@
         padding: 0 0 0 16px;
         li {
           color: #ffffff;
-          font-size: 16px;
+          font-size: rem(16);
           font-weight: 400;
           line-height: 1.2;
           text-align: left;

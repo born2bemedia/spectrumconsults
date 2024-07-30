@@ -84,15 +84,15 @@
 .center::before {
   background: var(--secondary-glow);
   border-radius: 50%;
-  width: 480px;
-  height: 360px;
+  width: rem(480);
+  height: rem(360);
   margin-left: -400px;
 }
 
 .center::after {
   background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
+  width: rem(240);
+  height: rem(180);
   z-index: -1;
 }
 
@@ -135,7 +135,7 @@
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
-    max-width: 320px;
+    max-width: rem(320);
     text-align: center;
   }
 
@@ -153,7 +153,7 @@
 
   .center::before {
     transform: none;
-    height: 300px;
+    height: rem(300);
   }
 
   .description {
@@ -193,7 +193,7 @@
     pointer-events: none;
     inset: auto 0 0;
     padding: 2rem;
-    height: 200px;
+    height: rem(200);
     background: linear-gradient(
       to bottom,
       transparent 0%,

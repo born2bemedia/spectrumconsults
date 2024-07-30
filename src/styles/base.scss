@@ -45,19 +45,19 @@ body {
   margin: 0;
   background: #191919;
   font-family: "ZonaPro", sans-serif;
-  @media (max-width: 992px) {
+  @media (max-width: rem(992)) {
   }
   &.no-scroll {
     overflow: hidden;
     padding-right: 12px;
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       padding-right: 0;
     }
   }
 
   &::-webkit-scrollbar {
     background: transparent;
-    width: 10px;
+    width: rem(10);
   }
 
   &::-webkit-scrollbar-track {
@@ -87,20 +87,20 @@ img {
 a {
   text-decoration: none;
   outline: none !important;
-  @media (max-width: 992px) {
+  @media (max-width: rem(992)) {
     outline: none !important;
   }
 }
 
 .section-title {
   color: var(--2, #282828);
-  font-size: 48px;
+  font-size: rem(48);
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
   margin: 0;
-  @media (max-width: 992px) {
-    font-size: 40px;
+  @media (max-width: rem(992)) {
+    font-size: rem(40);
   }
 }
 
@@ -175,9 +175,9 @@ button {
 .logo {
   display: flex;
   img {
-    width: 190px;
-    @media (max-width: 992px) {
-      max-width: 130px;
+    width: rem(190);
+    @media (max-width: rem(992)) {
+      max-width: rem(130);
     }
   }
 }
@@ -187,12 +187,12 @@ button {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 14px;
+  font-size: rem(14);
   font-weight: 400;
   line-height: 1.2;
   text-align: center;
-  height: 30px;
-  width: 95px;
+  height: rem(30);
+  width: rem(95);
   color: #191919;
   background: #ffffff;
   border-radius: 63px;
@@ -206,7 +206,7 @@ button {
   background: #ea4073;
   padding: 5px 5px 5px 20px;
   border-radius: 60px;
-  font-size: 16px;
+  font-size: rem(16);
   font-weight: 400;
   line-height: 1.2;
   text-align: left;
@@ -233,51 +233,51 @@ button {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  font-size: 14px;
+  font-size: rem(14);
   font-weight: 400;
   line-height: 1.2;
   text-align: center;
   padding: 10px;
-  width: 160px;
+  width: rem(160);
   background: #ea4073;
   border-radius: 60px;
 }
 
 .connect {
   margin: 150px 0;
-  @media (max-width: 992px) {
+  @media (max-width: rem(992)) {
     margin: 100px 0;
   }
   &__top {
     display: flex;
     gap: 30px;
     margin-bottom: 60px;
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       flex-direction: column;
       gap: 30px;
     }
     h2 {
       color: #fff;
-      font-size: 36px;
+      font-size: rem(36);
       font-weight: 700;
       line-height: 1.2;
       text-align: left;
       margin: 0;
       width: 50%;
       flex-grow: 1;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         width: 100%;
       }
     }
     p {
       color: #acabae;
-      font-size: 16px;
+      font-size: rem(16);
       font-weight: 400;
       line-height: 1.2;
       text-align: left;
       margin: 0;
       width: 50%;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         width: 100%;
       }
     }
@@ -287,7 +287,7 @@ button {
     gap: 30px;
     .col-01 {
       width: calc(50% - 15px);
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         width: 100%;
       }
       form {
@@ -297,7 +297,7 @@ button {
 
         button {
           margin: 10px 0 0 0 !important;
-          width: 255px;
+          width: rem(255);
           justify-content: space-between;
           border: none;
         }
@@ -305,7 +305,7 @@ button {
         > div {
           width: calc(50% - 15px);
           position: relative;
-          @media (max-width: 992px) {
+          @media (max-width: rem(992)) {
             width: 100%;
           }
           &.full {
@@ -315,18 +315,18 @@ button {
             position: absolute;
             left: 0;
             color: #e74848;
-            font-size: 10px;
+            font-size: rem(10);
           }
           input,
           textarea {
             width: 100%;
 
             color: #ffffff;
-            height: 50px;
+            height: rem(50);
             border-radius: 25px;
             background: #ffffff0d;
             border: 1px solid #ffffff26;
-            font-size: 16px;
+            font-size: rem(16);
             font-weight: 400;
             line-height: 1.2;
             text-align: left;
@@ -340,7 +340,7 @@ button {
           }
 
           textarea {
-            height: 130px;
+            height: rem(130);
             padding: 15px 20px;
           }
 
@@ -379,7 +379,7 @@ button {
     }
     .col-02 {
       width: calc(50% - 15px);
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         display: none;
       }
     }
@@ -418,7 +418,7 @@ button {
 
   .popup-inner {
     transition: all 0.5s;
-    width: 540px;
+    width: rem(540);
     max-width: 95%;
     background: #2f2d34;
     padding: 50px;
@@ -439,7 +439,7 @@ button {
     &:-webkit-scrollbar {
       display: none; /* Safari and Chrome */
     }
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       padding: 40px 24px;
     }
     .popup-close {
@@ -447,7 +447,7 @@ button {
       right: 40px;
       top: 40px;
       cursor: pointer;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         top: 24px;
         right: 24px;
       }
@@ -461,7 +461,7 @@ button {
       h3 {
         color: #fff;
         margin: 10px 0 10px 0;
-        font-size: 36px;
+        font-size: rem(36);
         font-weight: 600;
         line-height: 1.2;
         text-align: center;
@@ -469,7 +469,7 @@ button {
       p {
         margin: 0;
         color: #fff;
-        font-size: 14px;
+        font-size: rem(14);
         font-weight: 400;
         line-height: 18.23px;
         text-align: center;
@@ -482,7 +482,7 @@ button {
   margin: 150px 0;
   h1 {
     color: #ffffff;
-    font-size: 36px;
+    font-size: rem(36);
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
@@ -491,12 +491,12 @@ button {
   }
   h2 {
     color: #ffffff;
-    font-size: 16px;
+    font-size: rem(16);
     font-weight: 400;
     line-height: 1.2;
     text-align: center;
     margin: 0 0 40px 0;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       br {
         display: none;
       }
@@ -539,7 +539,7 @@ button {
 
   .popup-inner {
     transition: all 0.5s;
-    width: 730px;
+    width: rem(730);
     max-width: 95%;
     background: #2f2d34;
     padding: 70px 95px;
@@ -549,7 +549,7 @@ button {
     top: 50%;
     transform: translate(-50%, -50%) scale(0);
     z-index: 99999;
-    min-height: 600px;
+    min-height: rem(600);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -561,7 +561,7 @@ button {
     &:-webkit-scrollbar {
       display: none; /* Safari and Chrome */
     }
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       padding: 40px 24px;
     }
     .popup-close {
@@ -569,21 +569,21 @@ button {
       right: 50px;
       top: 30px;
       cursor: pointer;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         top: 24px;
         right: 24px;
       }
     }
     h2 {
       margin: 0 0 10px 0;
-      font-size: 36px;
+      font-size: rem(36);
       font-weight: 700;
       line-height: 1.2;
       text-align: left;
       color: #fff;
       width: 100%;
-      @media (max-width: 992px) {
-        font-size: 24px;
+      @media (max-width: rem(992)) {
+        font-size: rem(24);
         br {
           display: none;
         }
@@ -591,7 +591,7 @@ button {
     }
     h3 {
       color: #ffffff;
-      font-size: 16px;
+      font-size: rem(16);
       font-weight: 400;
       line-height: 1.2;
       text-align: left;
@@ -599,7 +599,7 @@ button {
     }
     p {
       color: #ffffff99;
-      font-size: 16px;
+      font-size: rem(16);
       font-weight: 400;
       line-height: 1.2;
       text-align: left;
@@ -607,7 +607,7 @@ button {
     }
     .service {
       color: #ffffff;
-      font-size: 14px;
+      font-size: rem(14);
       font-weight: 400;
       line-height: 1.2;
       text-align: center;
@@ -633,7 +633,7 @@ button {
             flex-direction: column;
             label {
               margin: 0 0 10px 0;
-              font-size: 16px;
+              font-size: rem(16);
               font-weight: 700;
               line-height: 1.2;
               text-align: left;
@@ -647,11 +647,11 @@ button {
               .upload-custom {
                 width: 100%;
                 color: #ffffff;
-                height: 50px;
+                height: rem(50);
                 border-radius: 25px;
                 background: #ffffff0d;
                 border: 1px solid #ffffff26;
-                font-size: 16px;
+                font-size: rem(16);
                 font-weight: 400;
                 line-height: 1.2;
                 text-align: left;
@@ -662,7 +662,7 @@ button {
                 justify-content: center;
               }
               .fileName {
-                font-size: 12px;
+                font-size: rem(12);
                 font-weight: 400;
                 line-height: 1.2;
                 text-align: left;
@@ -677,7 +677,7 @@ button {
             .error {
               text-align: center;
               width: 100%;
-              @media (max-width: 992px) {
+              @media (max-width: rem(992)) {
                 text-align: left;
               }
             }
@@ -698,32 +698,32 @@ button {
               gap: 10px;
               justify-content: center;
               color: #ffffff;
-              font-size: 14px;
+              font-size: rem(14);
               font-weight: 400;
               line-height: 1.2;
               text-align: left;
               svg {
-                width: 14px;
+                width: rem(14);
                 circle:last-child {
                   opacity: 0;
                   transition: all 0.5s;
                 }
               }
               span {
-                @media (max-width: 992px) {
+                @media (max-width: rem(992)) {
                   width: calc(100% - 24px);
                 }
               }
             }
           }
-          @media (max-width: 992px) {
+          @media (max-width: rem(992)) {
             width: 100%;
           }
           .error {
             position: absolute;
             left: 0;
             color: #e74848;
-            font-size: 10px;
+            font-size: rem(10);
           }
           .react-datepicker-wrapper {
             width: 100%;
@@ -734,11 +734,11 @@ button {
             width: 100%;
 
             color: #ffffff;
-            height: 50px;
+            height: rem(50);
             border-radius: 25px;
             background: #ffffff0d;
             border: 1px solid #ffffff26;
-            font-size: 16px;
+            font-size: rem(16);
             font-weight: 400;
             line-height: 1.2;
             text-align: left;
@@ -752,7 +752,7 @@ button {
           }
           textarea {
             padding: 15px 20px;
-            height: 130px;
+            height: rem(130);
           }
         }
       }
@@ -760,7 +760,7 @@ button {
       button {
         margin: 10px 0 0 0;
         font-weight: 600;
-        width: 255px;
+        width: rem(255);
       }
       .success {
         display: flex;
@@ -770,7 +770,7 @@ button {
         h3 {
           color: #fff;
           margin: 10px 0 10px 0;
-          font-size: 36px;
+          font-size: rem(36);
           font-weight: 600;
           line-height: 1.2;
           text-align: center;
@@ -778,7 +778,7 @@ button {
         p {
           margin: 0;
           color: #fff;
-          font-size: 14px;
+          font-size: rem(14);
           font-weight: 400;
           line-height: 18.23px;
           text-align: center;

@@ -1,6 +1,8 @@
+@import "mixin";
+
 .what-hero {
   margin: 80px 0 150px 0;
-  @media (max-width: 767px) {
+  @media (max-width: rem(767)) {
     margin: 40px 0 150px 0;
   }
 
@@ -10,24 +12,24 @@
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 60px;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       gap: 40px;
     }
     .col-01 {
       width: calc(50% - 30px);
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
       h1 {
-        font-size: 36px;
+        font-size: rem(36);
         font-weight: 700;
         line-height: 1.2;
         text-align: left;
         text-transform: uppercase;
         color: #ffffff;
         margin: 0 0 25px 0;
-        @media (max-width: 767px) {
-          font-size: 24px;
+        @media (max-width: rem(767)) {
+          font-size: rem(24);
           br {
             display: none;
           }
@@ -42,13 +44,13 @@
       }
       h2 {
         color: #ffffff;
-        font-size: 15px;
+        font-size: rem(15);
         font-weight: 400;
         line-height: 1.2;
         text-align: left;
         margin: 0 0 40px 0;
-        @media (max-width: 767px) {
-          font-size: 15px;
+        @media (max-width: rem(767)) {
+          font-size: rem(15);
           margin-bottom: 30px;
           br {
             display: none;
@@ -58,13 +60,13 @@
     }
     .col-02 {
       width: calc(50% - 30px);
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
       img {
         margin-top: -50px;
         height: auto;
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
           margin: 0;
         }
       }
@@ -74,13 +76,13 @@
 
 .our-approach {
   margin: 150px 0;
-  @media (max-width: 767px) {
+  @media (max-width: rem(767)) {
     margin: 100px 0;
   }
   &__body {
     p {
       color: #ffffff;
-      font-size: 16px;
+      font-size: rem(16);
       font-weight: 400;
       line-height: 1.2;
       text-align: left;
@@ -90,17 +92,17 @@
     .steps-wrap {
       overflow-x: auto;
       .steps-row {
-        width: 1110px;
+        width: rem(1110);
         display: flex;
         gap: 30px;
         .step {
-          width: 255px;
+          width: rem(255);
           display: flex;
           flex-direction: column;
           gap: 20px;
           h2 {
             color: #ea4073;
-            font-size: 24px;
+            font-size: rem(24);
             font-weight: 700;
             line-height: 1.2;
             text-align: left;
@@ -108,7 +110,7 @@
           }
           h3 {
             color: #ffffff;
-            font-size: 24px;
+            font-size: rem(24);
             font-weight: 700;
             line-height: 1.2;
             text-align: left;
@@ -118,9 +120,9 @@
             background: #2f2d34;
             border-radius: 24px;
             padding: 30px;
-            height: 170px;
+            height: rem(170);
             p {
-              font-size: 14px;
+              font-size: rem(14);
               color: #ffffff99;
               margin: 0;
               b {
@@ -139,7 +141,7 @@
       align-items: center;
       gap: 30px;
       margin: 0 0 50px 0;
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         flex-direction: column;
         gap: 20px;
         align-items: flex-start;
@@ -149,7 +151,7 @@
         padding: 10px 40px;
       }
       p {
-        font-size: 16px;
+        font-size: rem(16);
         margin: 0;
       }
     }
@@ -158,9 +160,9 @@
         .steps-row {
           .step {
             > div {
-              height: 156px;
+              height: rem(156);
               &.value {
-                height: 235px;
+                height: rem(235);
               }
             }
           }
@@ -175,7 +177,7 @@
       align-items: center;
       gap: 30px;
       margin: 0 0 50px 0;
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         flex-direction: column;
         gap: 20px;
         align-items: flex-start;
@@ -185,7 +187,7 @@
         padding: 10px 40px;
       }
       p {
-        font-size: 16px;
+        font-size: rem(16);
         margin: 0;
       }
     }
@@ -194,11 +196,11 @@
         .steps-row {
           gap: 15px;
           .step {
-            width: 210px;
+            width: rem(210);
             > div {
               &.value {
-                height: 235px;
-                width: 210px;
+                height: rem(235);
+                width: rem(210);
                 background: #2f2d34;
                 border-radius: 20px;
                 padding: 30px 20px;
@@ -208,7 +210,7 @@
                 background-repeat: no-repeat;
                 h2 {
                   color: #fff;
-                  font-size: 20px;
+                  font-size: rem(20);
                   font-weight: 700;
                   line-height: 1.2;
                   text-align: left;
@@ -218,7 +220,7 @@
                 p {
                   color: #ffffff99;
                   margin: 0;
-                  font-size: 16px;
+                  font-size: rem(16);
                   font-weight: 400;
                   line-height: 1.2;
                   text-align: left;
@@ -240,7 +242,7 @@
 
 .our-techniques {
   margin: 150px 0;
-  @media (max-width: 767px) {
+  @media (max-width: rem(767)) {
     margin: 100px 0;
   }
   &__body {
@@ -249,7 +251,7 @@
     background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       padding: 80px 20px 0 20px;
       background-image: url(/images/whatWeDo/techniquesBackMob.svg);
     }
@@ -257,31 +259,31 @@
       display: flex;
       gap: 50px;
       margin-bottom: 40px;
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         flex-direction: column;
         gap: 20px;
       }
       h2 {
         color: #ffffff;
-        font-size: 24px;
+        font-size: rem(24);
         font-weight: 700;
         line-height: 1.2;
         text-align: left;
         margin: 0;
         width: 30%;
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
           width: 100%;
         }
       }
       p {
         color: #ffffff;
-        font-size: 16px;
+        font-size: rem(16);
         font-weight: 400;
         line-height: 1.2;
         text-align: left;
         margin: 0;
         width: 70%;
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
           width: 100%;
         }
       }
@@ -291,14 +293,14 @@
       flex-direction: column;
       gap: 20px;
       .row {
-        height: 78px;
+        height: rem(78);
         display: flex;
         gap: 50px;
         background: #ffffff;
         align-items: center;
         position: relative;
         border-radius: 20px;
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
           height: auto;
           padding: 28px 30px;
           flex-direction: column;
@@ -310,34 +312,34 @@
           position: absolute;
           left: 0;
           top: 24px;
-          width: 5px;
-          height: 30px;
+          width: rem(5);
+          height: rem(30);
           border-radius: 0px 5px 5px 0px;
           background: #ea4073;
         }
         h3 {
           color: #191919;
-          font-size: 20px;
+          font-size: rem(20);
           font-weight: 700;
           line-height: 1.2;
           text-align: left;
           margin: 0;
           width: 30%;
           padding-left: 30px;
-          @media (max-width: 767px) {
+          @media (max-width: rem(767)) {
             width: 100%;
             padding: 0;
           }
         }
         p {
           color: #191919;
-          font-size: 16px;
+          font-size: rem(16);
           font-weight: 400;
           line-height: 1.2;
           text-align: left;
           margin: 0;
           width: 70%;
-          @media (max-width: 767px) {
+          @media (max-width: rem(767)) {
             width: 100%;
           }
         }
@@ -348,13 +350,13 @@
 
 .your-path {
   margin: 150px 0;
-  @media (max-width: 767px) {
+  @media (max-width: rem(767)) {
     margin: 100px 0;
   }
 
   h2 {
     color: #ffffff;
-    font-size: 36px;
+    font-size: rem(36);
     font-weight: 700;
     line-height: 1.2;
     text-align: left;
@@ -362,12 +364,12 @@
   }
   h3 {
     color: #ffffff;
-    font-size: 16px;
+    font-size: rem(16);
     font-weight: 400;
     line-height: 1.2;
     text-align: left;
     margin: 0 0 40px 0;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       br {
         display: none;
       }
@@ -382,12 +384,12 @@
       gap: 15px;
 
       flex-wrap: wrap;
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         flex-wrap: nowrap;
-        width: 1110px;
+        width: rem(1110);
       }
       > div {
-        width: 210px;
+        width: rem(210);
         background: #2f2d34;
         border-radius: 20px;
         padding: 30px 20px;
@@ -400,7 +402,7 @@
         }
         h2 {
           color: #fff;
-          font-size: 20px;
+          font-size: rem(20);
           font-weight: 700;
           line-height: 1.2;
           text-align: left;
@@ -410,7 +412,7 @@
         p {
           color: #ffffff99;
           margin: 0;
-          font-size: 14px;
+          font-size: rem(14);
           font-weight: 400;
           line-height: 1.2;
           text-align: left;
@@ -432,7 +434,7 @@
 
 .stand-out {
   margin: 150px 0;
-  @media (max-width: 767px) {
+  @media (max-width: rem(767)) {
     margin: 100px 0;
   }
   &__body {
@@ -441,7 +443,7 @@
     background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       padding: 80px 20px 0 20px;
       background-image: url(/images/whatWeDo/standOutBackMob.svg);
     }
@@ -449,34 +451,34 @@
       display: flex;
       gap: 50px;
       margin-bottom: 40px;
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         flex-direction: column;
         gap: 20px;
       }
       h2 {
         color: #ffffff;
-        font-size: 24px;
+        font-size: rem(24);
         font-weight: 700;
         line-height: 1.2;
         text-align: left;
         margin: 0;
         width: 30%;
         @media (max-width: 1024px) and (min-width:767px) {
-          font-size: 16px;
+          font-size: rem(16);
         }
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
           width: 100%;
         }
       }
       p {
         color: #ffffff;
-        font-size: 16px;
+        font-size: rem(16);
         font-weight: 400;
         line-height: 1.2;
         text-align: left;
         margin: 0;
         width: 70%;
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
           width: 100%;
         }
       }
@@ -490,12 +492,12 @@
         border-radius: 20px;
         padding: 30px;
         width: calc(50% - 15px);
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
           width: 100%;
         }
         h2 {
           color: #191919;
-          font-size: 20px;
+          font-size: rem(20);
           font-weight: 700;
           line-height: 1.2;
           text-align: left;
@@ -507,7 +509,7 @@
         }
         p {
           color: #191919;
-          font-size: 16px;
+          font-size: rem(16);
           font-weight: 400;
           line-height: 1.2;
           text-align: left;

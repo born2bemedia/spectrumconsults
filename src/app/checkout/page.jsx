@@ -484,7 +484,7 @@ const CartPage = () => {
                                 <span>
                                   I have read and agree to the{" "}
                                   <Link href="/refund-policy">
-                                    Refund Polic
+                                    Refund Policy
                                   </Link>
                                 </span>
                               </label>

@@ -1,6 +1,8 @@
+@import "mixin";
+
 .consulting-hero {
   margin: 80px 0 150px 0;
-  @media (max-width: 767px) {
+  @media (max-width: rem(767)) {
     margin: 40px 0 150px 0;
   }
 
@@ -10,24 +12,24 @@
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 60px;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       gap: 40px;
     }
     .col-01 {
       width: calc(50% - 30px);
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
       h1 {
-        font-size: 36px;
+        font-size: rem(36);
         font-weight: 700;
         line-height: 1.2;
         text-align: left;
         text-transform: uppercase;
         color: #ffffff;
         margin: 0 0 25px 0;
-        @media (max-width: 767px) {
-          font-size: 24px;
+        @media (max-width: rem(767)) {
+          font-size: rem(24);
           br {
             display: none;
           }
@@ -42,13 +44,13 @@
       }
       h2 {
         color: #ffffff;
-        font-size: 15px;
+        font-size: rem(15);
         font-weight: 400;
         line-height: 1.2;
         text-align: left;
         margin: 0 0 40px 0;
-        @media (max-width: 767px) {
-          font-size: 15px;
+        @media (max-width: rem(767)) {
+          font-size: rem(15);
           margin-bottom: 30px;
           br {
             display: none;
@@ -58,13 +60,13 @@
     }
     .col-02 {
       width: calc(50% - 30px);
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
       img {
         margin-top: -50px;
         height: auto;
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
           margin: 0;
         }
       }
@@ -84,7 +86,7 @@
     background-position: left top;
     background-repeat: no-repeat;
     border-radius: 20px;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       flex-direction: column;
       gap: 20px;
       padding: 95px 30px 50px 30px;
@@ -92,40 +94,40 @@
     }
     h2 {
       color: #fff;
-      font-size: 36px;
+      font-size: rem(36);
       font-weight: 700;
       line-height: 1.2;
       text-align: left;
       margin: 0;
       width: 30%;
       @media (max-width: 1024px) and (min-width:767px) {
-        font-size: 24px;
+        font-size: rem(24);
       }
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
     }
     > div {
       width: 70%;
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
       p {
         color: #fff;
-        font-size: 16px;
+        font-size: rem(16);
         font-weight: 400;
         line-height: 1.2;
         text-align: left;
         margin: 0 0 20px 0;
         @media (max-width: 1024px) and (min-width:767px) {
-          font-size: 12px;
+          font-size: rem(12);
         }
       }
       .button-wrap {
         display: flex;
       }
       .white-button {
-        height: 50px;
+        height: rem(50);
         width: auto;
         padding: 0 40px;
       }
@@ -135,13 +137,13 @@
 
 .why-choose {
   margin: 150px 0;
-  @media (max-width: 767px) {
+  @media (max-width: rem(767)) {
     margin: 100px 0;
   }
 
   h2 {
     color: #ffffff;
-    font-size: 36px;
+    font-size: rem(36);
     font-weight: 700;
     line-height: 1.2;
     text-align: left;
@@ -149,12 +151,12 @@
   }
   h3 {
     color: #ffffff;
-    font-size: 16px;
+    font-size: rem(16);
     font-weight: 400;
     line-height: 1.2;
     text-align: left;
     margin: 0 0 40px 0;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       br {
         display: none;
       }
@@ -169,9 +171,9 @@
       gap: 30px;
 
       flex-wrap: wrap;
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         flex-wrap: nowrap;
-        width: 1965px;
+        width: rem(1965);
       }
       > div {
         width: calc(25% - 23px);
@@ -187,7 +189,7 @@
         }
         h2 {
           color: #fff;
-          font-size: 20px;
+          font-size: rem(20);
           font-weight: 700;
           line-height: 1.2;
           text-align: left;
@@ -197,7 +199,7 @@
         p {
           color: #ffffff99;
           margin: 0;
-          font-size: 16px;
+          font-size: rem(16);
           font-weight: 400;
           line-height: 1.2;
           text-align: left;
@@ -223,7 +225,7 @@
     background-position: left bottom;
     background-repeat: no-repeat;
     border-radius: 20px;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       flex-direction: column;
       gap: 20px;
       padding: 40px 30px 100px 30px;
@@ -231,31 +233,31 @@
     }
     h2 {
       color: #fff;
-      font-size: 24px;
+      font-size: rem(24);
       font-weight: 700;
       line-height: 1.2;
       text-align: left;
       margin: 0;
       width: 28%;
       @media (max-width: 1024px) and (min-width:767px) {
-        font-size: 16px;
+        font-size: rem(16);
       }
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
     }
     p {
       color: #fff;
-      font-size: 16px;
+      font-size: rem(16);
       font-weight: 400;
       line-height: 1.2;
       text-align: left;
       margin: 0;
       width: 72%;
       @media (max-width: 1024px) and (min-width:767px) {
-        font-size: 12px;
+        font-size: rem(12);
       }
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
     }
@@ -275,7 +277,7 @@
       content: "";
       display: block;
       width: 100%;
-      height: 100px;
+      height: rem(100);
       background-image: url(/images/consulting/packagesBack.svg);
       background-size: cover;
       background-position: left bottom;
@@ -285,28 +287,28 @@
       border-radius: 0 0 20px 20px;
       position: absolute;
       left: 0;
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         background-image: url(/images/consulting/packagesBackMob.svg);
       }
     }
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       padding: 175px 0 0 0;
     }
 
     .row {
       display: flex;
       gap: 30px;
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         flex-direction: column;
       }
       .package {
         width: calc(33.33% - 20px);
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
           width: 100%;
         }
         h2 {
           color: #191919;
-          font-size: 36px;
+          font-size: rem(36);
           font-weight: 700;
           line-height: 1.2;
           text-align: left;
@@ -314,7 +316,7 @@
         }
         h3 {
           color: #ea4073;
-          font-size: 24px;
+          font-size: rem(24);
           font-weight: 700;
           line-height: 1.2;
           text-align: left;
@@ -322,7 +324,7 @@
         }
         p {
           color: #191919;
-          font-size: 16px;
+          font-size: rem(16);
           font-weight: 600;
           line-height: 18.8px;
           text-align: left;
@@ -338,7 +340,7 @@
           list-style-type: none;
           li {
             color: #191919;
-            font-size: 16px;
+            font-size: rem(16);
             font-weight: 400;
             line-height: 1.2;
             text-align: left;
@@ -347,8 +349,8 @@
             &:before {
               content: "";
               display: block;
-              width: 6px;
-              height: 6px;
+              width: rem(6);
+              height: rem(6);
               background: #ea4073;
               border-radius: 50%;
               position: absolute;
@@ -371,7 +373,7 @@
     padding: 95px 65px 50px 65px;
     border-radius: 20px;
     margin-top: 75px;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       flex-direction: column;
       padding: 50px 30px;
       background-image: url(/images/consulting/premiumBackMob.svg);
@@ -380,8 +382,8 @@
       &:after {
         content: "";
         position: absolute;
-        width: 40px;
-        height: 40px;
+        width: rem(40);
+        height: rem(40);
         border: 10px solid #191919;
         border-width: 10px 10px 0 0;
         display: block;
@@ -394,7 +396,7 @@
       &:first-child {
         width: calc(33.33% - 15px);
         margin-top: -60px;
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
           margin: 0;
           width: 100%;
         }
@@ -403,7 +405,7 @@
         }
         h2 {
           color: #fff;
-          font-size: 24px;
+          font-size: rem(24);
           font-weight: 700;
           line-height: 1.2;
           text-align: left;
@@ -411,7 +413,7 @@
         }
         p {
           color: #fff;
-          font-size: 16px;
+          font-size: rem(16);
           font-weight: 600;
           line-height: 18.8px;
           text-align: left;
@@ -422,7 +424,7 @@
         border-left: 1px solid #ffffff;
         padding-left: 40px;
         width: calc(66.67% - 15px);
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
           padding-left: 0;
           padding-top: 40px;
           border: none;
@@ -440,7 +442,7 @@
           list-style-type: none;
           li {
             color: #fff;
-            font-size: 16px;
+            font-size: rem(16);
             font-weight: 400;
             line-height: 1.2;
             text-align: left;
@@ -449,8 +451,8 @@
             &:before {
               content: "";
               display: block;
-              width: 6px;
-              height: 6px;
+              width: rem(6);
+              height: rem(6);
               background: #fff;
               border-radius: 50%;
               position: absolute;
@@ -466,22 +468,22 @@
 
 .services-tabs {
   margin: 150px 0;
-  @media (max-width: 767px) {
+  @media (max-width: rem(767)) {
     margin: 100px 0;
   }
   .tabs {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
 
     }
     .tabs-nav {
-      width: 255px;
+      width: rem(255);
       display: flex;
       flex-direction: column;
       gap: 15px;
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
       > span {
@@ -490,7 +492,7 @@
       }
       button {
         color: #ffffff80;
-        font-size: 16px;
+        font-size: rem(16);
         font-weight: 600;
         line-height: 1.2;
         text-align: left;
@@ -505,8 +507,8 @@
           &::before {
             content: "";
             display: block;
-            width: 4px;
-            height: 30px;
+            width: rem(4);
+            height: rem(30);
             background: #ea4073;
             border-radius: 20px;
           }
@@ -520,7 +522,7 @@
       width: calc(100% - 285px);
       position: relative;
       padding: 100px 65px 0 65px;
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
         padding: 65px 30px 0 30px;
       }
@@ -539,7 +541,7 @@
         &:nth-child(2){
             display: none;
         }
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
             &:first-child{
                 display: none;
             }
@@ -560,7 +562,7 @@
         transition: all 0.5s;
         &.loading{
           opacity: 0;
-          min-height: 800px;
+          min-height: rem(800);
         }
         > .service {
           background: #2f2d34;
@@ -571,23 +573,23 @@
           justify-content: space-between;
           flex-direction: column;
           gap: 50px;
-          height: 390px;
+          height: rem(390);
           @media (max-width: 1024px) and (min-width:767px) {
             width: 100%;
           }
-          @media (max-width: 767px) {
+          @media (max-width: rem(767)) {
             width: 100%;
             height: auto;
           }
           &:nth-child(odd){
             margin-top: -50px;
-            @media (max-width: 767px) {
+            @media (max-width: rem(767)) {
                 margin: 0;
             }
           }
           h3 {
             color: #ffffff;
-            font-size: 20px;
+            font-size: rem(20);
             font-weight: 700;
             line-height: 1.2;
             text-align: left;
@@ -596,7 +598,7 @@
           }
           p {
             color: #ffffff99;
-            font-size: 15px;
+            font-size: rem(15);
             font-weight: 400;
             line-height: 1.2;
             text-align: left;
@@ -604,7 +606,7 @@
           }
           .price{
             color: #EA4073;
-            font-size: 16px;
+            font-size: rem(16);
             font-weight: 700;
             line-height: 1.2;
             text-align: left;
@@ -614,7 +616,7 @@
           .main-button{
             background: #FFFFFF;
             color: #191919;
-            width: 160px;
+            width: rem(160);
           }
         }
       }

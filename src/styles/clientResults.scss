@@ -1,6 +1,8 @@
+@import "mixin";
+
 .results-hero {
   margin: 80px 0 150px 0;
-  @media (max-width: 767px) {
+  @media (max-width: rem(767)) {
     margin: 40px 0 150px 0;
   }
 
@@ -10,24 +12,24 @@
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 60px;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       gap: 40px;
     }
     .col-01 {
       width: calc(50% - 30px);
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
       h1 {
-        font-size: 36px;
+        font-size: rem(36);
         font-weight: 700;
         line-height: 1.2;
         text-align: left;
         text-transform: uppercase;
         color: #ffffff;
         margin: 0 0 25px 0;
-        @media (max-width: 767px) {
-          font-size: 24px;
+        @media (max-width: rem(767)) {
+          font-size: rem(24);
           br {
             display: none;
           }
@@ -42,13 +44,13 @@
       }
       h2 {
         color: #ffffff;
-        font-size: 15px;
+        font-size: rem(15);
         font-weight: 400;
         line-height: 1.2;
         text-align: left;
         margin: 0 0 40px 0;
-        @media (max-width: 767px) {
-          font-size: 15px;
+        @media (max-width: rem(767)) {
+          font-size: rem(15);
           margin-bottom: 30px;
           br {
             display: none;
@@ -58,13 +60,13 @@
     }
     .col-02 {
       width: calc(50% - 30px);
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
       img {
         margin-top: -50px;
         height: auto;
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
           margin: 0;
         }
       }
@@ -74,7 +76,7 @@
 
 .results-last {
   margin: 150px 0;
-  @media (max-width: 767px) {
+  @media (max-width: rem(767)) {
     margin: 100px 0;
   }
   &__body {
@@ -83,15 +85,15 @@
     align-items: center;
   }
   h2 {
-    font-size: 36px;
+    font-size: rem(36);
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
     margin: 0 0 40px 0;
-    @media (max-width: 767px) {
-      font-size: 24px;
+    @media (max-width: rem(767)) {
+      font-size: rem(24);
       br {
         display: none;
       }
@@ -109,7 +111,7 @@
 .results-wrap {
   margin: 150px 0;
   overflow: hidden;
-  @media (max-width: 767px) {
+  @media (max-width: rem(767)) {
     margin: 100px 0;
   }
   &__body {
@@ -120,11 +122,11 @@
     padding: 84px 65px 0 65px;
     border-radius: 20px;
     position: relative;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       padding: 84px 20px 0 20px;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       background-image: url(/images/home/servicesBackMob.svg);
     }
     .section-title {
@@ -132,7 +134,7 @@
       left: 0;
       top: 0;
       color: #ffffff;
-      font-size: 14px;
+      font-size: rem(14);
       font-weight: 400;
       line-height: 1.2;
       text-align: center;
@@ -147,20 +149,20 @@
       align-items: center;
       position: relative;
       z-index: 1;
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         flex-direction: column;
         gap: 20px;
       }
       h2 {
         color: #ffffff;
-        font-size: 26px;
+        font-size: rem(26);
         font-weight: 700;
         line-height: 1.2;
         text-align: left;
         margin: 0;
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
           width: 100%;
-          font-size: 24px;
+          font-size: rem(24);
         }
       }
       .buttons-wrap {
@@ -168,7 +170,7 @@
         justify-content: space-between;
         align-items: center;
         width: 25%;
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
           width: 100%;
           flex-direction: column;
           gap: 30px;
@@ -185,7 +187,7 @@
 
       .slick-slider {
         width: 75%;
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
           width: 100%;
         }
         .slick-arrow {
@@ -197,10 +199,10 @@
 
   .results-slider-wrap {
     margin-top: 30px;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
     }
     .slick-slider {
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
       }
       .slick-arrow {
         display: none !important;
@@ -222,12 +224,12 @@
                 display: flex !important;
                 flex-direction: column;
                 align-items: flex-start;
-                @media (max-width: 767px) {
+                @media (max-width: rem(767)) {
                     padding: 20px;
                 }
                 h3 {
                   color: #ffffff;
-                  font-size: 20px;
+                  font-size: rem(20);
                   font-weight: 700;
                   line-height: 1.2;
                   text-align: left;
@@ -236,10 +238,10 @@
                   display: flex;
                   align-items: center;
                   gap: 15px;
-                  @media (max-width: 767px) {
+                  @media (max-width: rem(767)) {
                     flex-direction: column;
                     align-items: flex-start;
-                    font-size: 16px;
+                    font-size: rem(16);
                   }
                   .number {
                     display: flex;
@@ -247,10 +249,10 @@
                     align-items: center;
                     background: #ea4073;
                     border-radius: 50%;
-                    width: 50px;
-                    height: 50px;
+                    width: rem(50);
+                    height: rem(50);
                     color: #ffffff;
-                    font-size: 24px;
+                    font-size: rem(24);
                     font-weight: 700;
                     line-height: 1;
                     text-align: center;
@@ -263,7 +265,7 @@
                 }
                 p {
                   color: #ffffff99;
-                  font-size: 16px;
+                  font-size: rem(16);
                   font-weight: 400;
                   line-height: 1.2;
                   text-align: left;
@@ -277,7 +279,7 @@
                   padding: 0 0 0 16px;
                   li {
                     color: #ffffff99;
-                    font-size: 16px;
+                    font-size: rem(16);
                     font-weight: 400;
                     line-height: 1.2;
                     text-align: left;
@@ -285,7 +287,7 @@
                 }
                 h4 {
                   color: #ea4073;
-                  font-size: 16px;
+                  font-size: rem(16);
                   font-weight: 700;
                   line-height: 1.2;
                   text-align: left;

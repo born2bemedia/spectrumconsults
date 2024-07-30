@@ -1,8 +1,10 @@
+@import "mixin";
+
 .connect-hero {
   margin: 80px 0 0 0;
   position: relative;
   z-index: 1;
-  @media (max-width: 767px) {
+  @media (max-width: rem(767)) {
     margin: 40px 0 0 0;
   }
 
@@ -12,16 +14,16 @@
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 60px;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       gap: 40px;
     }
     .col-01 {
       width: calc(50% - 30px);
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
       h1 {
-        font-size: 36px;
+        font-size: rem(36);
         font-weight: 700;
         line-height: 1.2;
         text-align: left;
@@ -29,10 +31,10 @@
         color: #ffffff;
         margin: 0 0 25px 0;
         @media (max-width: 1024px) and (min-width:767px) {
-          font-size: 24px;
+          font-size: rem(24);
         }
-        @media (max-width: 767px) {
-          font-size: 24px;
+        @media (max-width: rem(767)) {
+          font-size: rem(24);
           br {
             display: none;
           }
@@ -47,16 +49,16 @@
       }
       h2 {
         color: #ffffff;
-        font-size: 15px;
+        font-size: rem(15);
         font-weight: 400;
         line-height: 1.2;
         text-align: left;
         margin: 0 0 40px 0;
         @media (max-width: 1024px) and (min-width:767px) {
-          font-size: 12px;
+          font-size: rem(12);
         }
-        @media (max-width: 767px) {
-          font-size: 15px;
+        @media (max-width: rem(767)) {
+          font-size: rem(15);
           margin-bottom: 30px;
           br {
             display: none;
@@ -66,13 +68,13 @@
     }
     .col-02 {
       width: calc(50% - 30px);
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
       img {
         margin-top: -50px;
         height: auto;
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
           margin: 0;
         }
       }
@@ -94,23 +96,23 @@
   @media (max-width: 1024px) and (min-width:767px) {
     margin-top: -0px;
   }
-  @media (max-width: 767px) {
+  @media (max-width: rem(767)) {
     padding: 100px 0 150px 0;
     background-image: url(/images/home/whatWeDoBackMob.svg);
   }
   &__body {
     display: flex;
     gap: 50px;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       flex-direction: column;
       gap: 40px;
     }
     .left {
-      width: 270px;
+      width: rem(270);
       display: flex;
       flex-direction: column;
       gap: 40px;
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
       > div {
@@ -123,7 +125,7 @@
         }
         a {
           color: #191919;
-          font-size: 20px;
+          font-size: rem(20);
           font-weight: 700;
           line-height: 1.2;
           text-align: left;
@@ -134,7 +136,7 @@
       width: calc(100% - 320px);
       display: flex;
       gap: 60px;
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
         flex-direction: column;
       }
@@ -143,12 +145,12 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        @media (max-width: 767px) {
+        @media (max-width: rem(767)) {
           width: 100%;
         }
         .map {
           width: 100%;
-          height: 250px;
+          height: rem(250);
           background: #d9d9d9;
           border-radius: 20px;
           overflow: hidden;
@@ -175,7 +177,7 @@
     background-position: left bottom;
     background-repeat: no-repeat;
     border-radius: 20px;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       flex-direction: column;
       gap: 20px;
       padding: 40px 30px 100px 30px;
@@ -183,13 +185,13 @@
     }
     h2 {
       color: #fff;
-      font-size: 24px;
+      font-size: rem(24);
       font-weight: 700;
       line-height: 1.2;
       text-align: left;
       margin: 0;
       width: 20%;
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
     }
@@ -197,24 +199,24 @@
       display: flex;
       gap: 12px;
       width: 35%;
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
       }
       a {
         img {
-          width: 50px;
+          width: rem(50);
         }
       }
     }
     p {
       color: #fff;
-      font-size: 16px;
+      font-size: rem(16);
       font-weight: 400;
       line-height: 1.2;
       text-align: left;
       margin: 0;
       width: 45%;
-      @media (max-width: 767px) {
+      @media (max-width: rem(767)) {
         width: 100%;
         br{
             display: none;

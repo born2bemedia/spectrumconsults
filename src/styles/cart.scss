@@ -1,3 +1,5 @@
+@import "mixin";
+
 .cart-wrap {
   margin: 50px 0 70px 0;
   &.empty {
@@ -8,7 +10,7 @@
   }
   h1 {
     color: #ffffff;
-    font-size: 36px;
+    font-size: rem(36);
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
@@ -18,12 +20,12 @@
   }
   p {
     color: #161616;
-    font-size: 16px;
+    font-size: rem(16);
     font-weight: 400;
     line-height: 1.2;
     text-align: center;
     margin: 0 0 40px 0;
-    @media (max-width: 992px) {
+    @media (max-width: rem(992)) {
       br {
         display: none;
       }
@@ -38,16 +40,16 @@
       display: flex;
       gap: 50px;
       justify-content: space-between;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         display: none;
       }
       div {
         text-transform: uppercase;
-        font-size: 20px;
+        font-size: rem(20);
         font-weight: 700;
         line-height: 1.2;
         text-align: center;
-        width: 110px;
+        width: rem(110);
         color: #fff;
         &:first-child {
           width: 55%;
@@ -62,7 +64,7 @@
         justify-content: space-between;
         padding: 20px 30px;
         border-bottom: 1px solid #ffffff33;
-        @media (max-width: 992px) {
+        @media (max-width: rem(992)) {
           flex-direction: column;
           padding: 20px 0;
           gap: 20px;
@@ -100,11 +102,11 @@
           border: none;
         }
         div {
-          font-size: 16px;
+          font-size: rem(16);
           font-weight: 400;
           line-height: 1.2;
           text-align: center;
-          width: 110px;
+          width: rem(110);
           color: #fff;
           &:first-child {
             width: 55%;
@@ -115,7 +117,7 @@
             align-items: center;
             gap: 5px;
             color: #ff5353;
-            font-size: 16px;
+            font-size: rem(16);
             font-weight: 600;
             line-height: 1.2;
             text-align: left;
@@ -135,7 +137,7 @@
     justify-content: center;
     padding: 13px;
     color: #161616;
-    font-size: 36px;
+    font-size: rem(36);
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
@@ -151,10 +153,10 @@
 
 .checkout-wrap {
   margin: 70px auto 100px auto;
-  max-width: 540px;
+  max-width: rem(540);
   h2 {
     color: #ffffff;
-    font-size: 36px;
+    font-size: rem(36);
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
@@ -178,24 +180,24 @@
       > div {
         width: calc(50% - 15px);
         position: relative;
-        @media (max-width: 992px) {
+        @media (max-width: rem(992)) {
           width: 100%;
         }
         .error {
           position: absolute;
           left: 0;
-          font-size: 12px;
+          font-size: rem(12);
           color: #ff5353;
         }
         input {
           width: 100%;
 
           color: #ffffff;
-          height: 50px;
+          height: rem(50);
           border-radius: 25px;
           background: #ffffff0d;
           border: 1px solid #ffffff26;
-          font-size: 16px;
+          font-size: rem(16);
           font-weight: 400;
           line-height: 1.2;
           text-align: left;
@@ -217,38 +219,38 @@
       display: flex;
       gap: 15px;
       flex-direction: column;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         flex-direction: column;
       }
       div {
         width: 100%;
         position: relative;
-        height: 50px;
+        height: rem(50);
         padding: 0 20px;
         border: 1px solid #ffffff33;
         background: #ffffff1a;
         border-radius: 25px;
         color: #ffffff;
-        font-size: 16px;
+        font-size: rem(16);
         font-weight: 400;
         line-height: 1.2;
         text-align: left;
         display: flex;
         align-items: center;
-        @media (max-width: 992px) {
+        @media (max-width: rem(992)) {
           width: 100%;
         }
       }
       p {
         width: 100%;
         position: relative;
-        font-size: 12px;
+        font-size: rem(12);
         font-weight: 400;
         line-height: 1.2;
         text-align: left;
         color: #fff;
         margin: 0;
-        @media (max-width: 992px) {
+        @media (max-width: rem(992)) {
           width: 100%;
         }
       }
@@ -259,7 +261,7 @@
       gap: 10px;
       align-items: center;
       flex-direction: column;
-      @media (max-width: 992px) {
+      @media (max-width: rem(992)) {
         flex-direction: column;
         gap: 30px;
       }
@@ -267,13 +269,13 @@
         width: 100%;
         position: relative;
         margin-top: 10px;
-        @media (max-width: 992px) {
+        @media (max-width: rem(992)) {
           width: 100%;
         }
         .error {
           position: absolute;
           left: 0;
-          font-size: 12px;
+          font-size: rem(12);
           color: #ff5353;
         }
         input {
@@ -293,13 +295,13 @@
           align-items: flex-start;
           gap: 10px;
           color: #fff;
-          font-size: 12px;
+          font-size: rem(12);
           font-weight: 400;
           line-height: 1.2;
           text-align: left;
           svg {
-            width: 20px;
-            height: 20px;
+            width: rem(20);
+            height: rem(20);
             margin-top: -5px;
             rect {
               &:last-child {
@@ -316,16 +318,16 @@
         }
       }
       button {
-        width: 220px;
-        height: 50px;
+        width: rem(220);
+        height: rem(50);
         margin: 50px 0 20px 0;
-        @media (max-width: 992px) {
-          width: 220px;
+        @media (max-width: rem(992)) {
+          width: rem(220);
         }
       }
       .privacy {
         color: #fff;
-        font-size: 9px;
+        font-size: rem(9);
         font-weight: 400;
         line-height: 1.2;
         text-align: center;
@@ -341,7 +343,7 @@
   margin: 150px 0;
   h1 {
     color: #ffffff;
-    font-size: 36px;
+    font-size: rem(36);
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
@@ -350,12 +352,12 @@
   }
   h2 {
     color: #ffffff;
-    font-size: 16px;
+    font-size: rem(16);
     font-weight: 400;
     line-height: 1.2;
     text-align: center;
     margin: 0 0 40px 0;
-    @media (max-width: 767px) {
+    @media (max-width: rem(767)) {
       br {
         display: none;
       }
