@@ -46,10 +46,11 @@ const customStyles = {
     margin: "0",
     padding: "0",
     border: "none",
+    color: "#ffffff",
   }),
   singleValue: (provided) => ({
     ...provided,
-    color: "#ffffff4d",
+    color: "#ffffff",
   }),
   indicatorsContainer: (provided) => ({
     ...provided,

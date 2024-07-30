@@ -84,16 +84,16 @@ const Footer = () => {
                 <h2>Legal</h2>
                 <ul>
                   <li>
-                    <Link href="#">Terms and Conditions</Link>
+                    <Link href="/terms-and-conditions">Terms and Conditions</Link>
                   </li>
                   <li>
-                    <Link href="#">Privacy Policy</Link>
+                    <Link href="/privacy-policy">Privacy Policy</Link>
                   </li>
                   <li>
-                    <Link href="#">Refund Policy</Link>
+                    <Link href="/refund-policy">Refund Policy</Link>
                   </li>
                   <li>
-                    <Link href="#">Cookie Policy</Link>
+                    <Link href="/cookie-policy">Cookie Policy</Link>
                   </li>
                 </ul>
               </div>
@@ -101,8 +101,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          © {currentYear} Spectrum Consults. All Rights Reserved | Privacy
-          Policy
+          © {currentYear} Spectrum Consults. All Rights Reserved | <Link href="/privacy-policy">Privacy Policy</Link>
         </div>
       </div>
     </footer>
