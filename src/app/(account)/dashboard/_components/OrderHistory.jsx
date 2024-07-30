@@ -72,7 +72,7 @@ const OrderHistory = () => {
                   <td>${order.total}</td>
                   <td>
                     {order.status == "completed" && (
-                      <Link href={order.invoice_url}>Download</Link>
+                      <Link target="_blank" href={order.invoice_url}>Download</Link>
                     )}
                   </td>
                 </tr>
