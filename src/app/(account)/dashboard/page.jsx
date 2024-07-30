@@ -61,7 +61,21 @@ export default function Account() {
 
             <div className="account-content">
               <div className={openIndex === 1 ? "block" : "hidden"}>
-                <MainTab />
+                <div className="main-tab">
+                  <p>
+                    Welcome to your personal control centre. Here, you can
+                    manage your{" "}
+                    <span onClick={() => toggleItem(3)}>account details</span>,
+                    monitor{" "}
+                    <span onClick={() => toggleItem(2)}>recent orders</span>,
+                    and update your{" "}
+                    <span onClick={() => toggleItem(3)}>billing address</span>{" "}
+                    in one convenient place. You can do it here if you need to
+                    change your password or update your personal information.
+                    Stay organised and in control with everything you need at
+                    your fingertips.
+                  </p>
+                </div>
               </div>
               <div className={openIndex === 2 ? "block" : "hidden"}>
                 <OrderHistory />

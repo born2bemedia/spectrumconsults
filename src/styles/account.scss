@@ -402,6 +402,10 @@
         line-height: 1.2;
         text-align: left;
         margin: 0 0 16px 0;
+        span{
+          cursor: pointer;
+          color: #EA4073;
+        }
       }
 
       h2 {
