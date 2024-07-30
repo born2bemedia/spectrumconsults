@@ -26,24 +26,22 @@ const Products = ({ category, quantity = 4 }) => {
 
   return (
     <>
-      {products.length > 0 && (
-        <div className={`${loading && "loading"} services-row`}>
-          {products.map((product) => (
+      <div className={`${loading && "loading"} services-row`}>
+        {products.length > 0 &&
+          products.map((product) => (
             <div className="service" key={product.id}>
               <div>
-                <h3>{product.title}</h3>
+                <h3 dangerouslySetInnerHTML={{ __html: product.title }} />
                 <p dangerouslySetInnerHTML={{ __html: product.content }} />
                 <span className="price">
-                  {product.from_price && 'From '}
-                  €{product.price}{" "}
+                  {product.from_price && "From "}€{product.price}{" "}
                   {product.price_prefix && product.price_prefix}
                 </span>
               </div>
               <AddToCartButton product={product} />
             </div>
           ))}
-        </div>
-      )}
+      </div>
     </>
   );
 };

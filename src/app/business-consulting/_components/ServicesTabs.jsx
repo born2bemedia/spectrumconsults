@@ -85,21 +85,21 @@ const ServicesTabs = () => {
             <div className="tabs-content">
               <img src="/images/consulting/tabsBack.svg" />
               <img src="/images/consulting/tabsBackMob.svg" />
-              {activeTab == "tab1" && (
+              <div className={`${activeTab == "tab1" ? "active" : ""}`}>
                 <Products category={"strategic-planning-development"} />
-              )}
-              {activeTab == "tab2" && (
+              </div>
+              <div className={`${activeTab == "tab2" ? "active" : ""}`}>
                 <Products category={"operational-excellence"} />
-              )}
-              {activeTab == "tab3" && (
+              </div>
+              <div className={`${activeTab == "tab3" ? "active" : ""}`}>
                 <Products category={"financial-optimization"} />
-              )}
-              {activeTab == "tab4" && (
+              </div>
+              <div className={`${activeTab == "tab4" ? "active" : ""}`}>
                 <Products category={"customer-experience-management"} />
-              )}
-              {activeTab == "tab5" && (
+              </div>
+              <div className={`${activeTab == "tab5" ? "active" : ""}`}>
                 <Products category={"technology-digital-transformation"} />
-              )}
+              </div>
             </div>
           </div>
         </div>

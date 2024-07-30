@@ -1,6 +1,6 @@
 const apiUrl = `${process.env.NEXT_PUBLIC_WORDPRESS_API_URL}/wp-json/custom/v1`;
 
-export async function fetchProductsByCategory(category, quantity = 3) {
+export async function fetchProductsByCategory(category, quantity = 4) {
     try {
         const response = await fetch(`${apiUrl}/products?category=${category}&quantity=${quantity}`);
         if (!response.ok) {

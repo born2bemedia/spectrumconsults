@@ -524,6 +524,12 @@
         width: 100%;
         padding: 65px 30px 0 30px;
       }
+      >div{
+        display: none;
+        &.active{
+          display: block;
+        }
+      }
       > img {
         position: absolute;
         width: 100%;
@@ -554,6 +560,7 @@
         transition: all 0.5s;
         &.loading{
           opacity: 0;
+          min-height: 800px;
         }
         > .service {
           background: #2f2d34;
