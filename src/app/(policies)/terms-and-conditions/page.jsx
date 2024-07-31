@@ -7,6 +7,7 @@ const PolicyPage = () => {
     <section className="policy">
       <div className="_container">
         <h1>Terms and conditions</h1>
+        <span className="date">Last Updated: 30 July, 2024</span>
         <div className="content">
           <h2>General Terms</h2>
           <p>
