@@ -18,13 +18,13 @@ const Footer = () => {
               <p>Optimise your operations and transform your strategy today.</p>
 
               <div className="soc">
-                <Link href="#">
+                <Link href="https://www.facebook.com/spectrumconsults.io" target="_blank">
                   <img src="/images/facebook.svg" alt="facebook" />
                 </Link>
-                <Link href="#">
+                <Link href="https://www.instagram.com/spectrumconsults.io" target="_blank">
                   <img src="/images/instagram.svg" alt="instagram" />
                 </Link>
-                <Link href="#">
+                <Link href="https://x.com/spectrumcons" target="_blank">
                   <img src="/images/x.svg" alt="x"/>
                 </Link>
               </div>

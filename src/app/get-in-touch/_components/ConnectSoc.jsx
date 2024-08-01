@@ -25,20 +25,20 @@ const ConnectSoc = () => {
             variants={fadeInUp}
             className="soc"
           >
-            <Link href="#">
-              <img src="/images/facebook.svg" />
+            <Link
+              href="https://www.facebook.com/spectrumconsults.io"
+              target="_blank"
+            >
+              <img src="/images/facebook.svg" alt="facebook" />
             </Link>
-            <Link href="#">
-              <img src="/images/instagram.svg" />
+            <Link
+              href="https://www.instagram.com/spectrumconsults.io"
+              target="_blank"
+            >
+              <img src="/images/instagram.svg" alt="instagram" />
             </Link>
-            <Link href="#">
-              <img src="/images/x.svg" />
-            </Link>
-            <Link href="#">
-              <img src="/images/youtube.svg" />
-            </Link>
-            <Link href="#">
-              <img src="/images/tiktok.svg" />
+            <Link href="https://x.com/spectrumcons" target="_blank">
+              <img src="/images/x.svg" alt="x" />
             </Link>
           </motion.div>
           <motion.p
@@ -47,9 +47,9 @@ const ConnectSoc = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            We're excited to connect with you and discuss how <br />
-            Spectrum Consults can help you achieve your <br />
-            business goals. Reach out through any of the <br />
+            We're excited to connect with you and discuss how 
+            Spectrum Consults can help you achieve your 
+            business goals. Reach out through any of the 
             channels above, and let's start a conversation.
           </motion.p>
         </div>
