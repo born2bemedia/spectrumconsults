@@ -127,7 +127,7 @@ const WhyChoose = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <Link href="#" className="main-button">
+            <Link href="/what-we-do" className="main-button">
               <span>Learn more about our consultants</span>
               <ButtonArrow />
             </Link>
