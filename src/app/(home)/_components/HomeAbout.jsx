@@ -52,7 +52,7 @@ const HomeAbout = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            About Us
+            Our Mission
           </motion.span>
           <motion.p
             initial="hidden"
