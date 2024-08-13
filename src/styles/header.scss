@@ -11,6 +11,9 @@ header {
         > div {
           a {
             color: #fff;
+            &.white-button{
+              color: #191919;
+            }
           }
           > span {
             color: #fff;
