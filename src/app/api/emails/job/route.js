@@ -42,7 +42,7 @@ export async function POST(request) {
     const mailOptionsRecipient = {
       from: '"The Modellist Limited" <noreply@spectrumconsults.io>', // Sender address
       to: "noreply@spectrumconsults.io", // Change to your recipient's email
-      subject: "Order Form Submission",
+      subject: "Job Form Submission",
       text: `Name: ${fullName}\nEmail: ${email}\nPhone: ${phone}\nDesired position: ${position}\nMessage: ${message}`,
       attachments: attachments,
     };

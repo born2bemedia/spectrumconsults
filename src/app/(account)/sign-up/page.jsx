@@ -225,7 +225,7 @@ export default function SignUp() {
                     className={touched.age && errors.age ? "invalid" : ""}
                     id="age"
                   />
-                  <label htmlFor="privacy">
+                  <label htmlFor="age">
                     <CheckboxIcon />
                     <span>
                       I am over 18 years old, and I have read and accepted all
