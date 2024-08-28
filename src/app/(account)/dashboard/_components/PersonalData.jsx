@@ -85,6 +85,7 @@ const PersonalData = () => {
 
   useEffect(() => {
     setIsMounted(true);
+    console.log(currentUser);
   }, []);
 
   const initialValues = {
@@ -112,7 +113,7 @@ const PersonalData = () => {
     street: Yup.string().required("This field is required."),
     address: Yup.string(),
     city: Yup.string().required("This field is required."),
-    state: Yup.string().required("This field is required."),
+    state: Yup.string(),
     zip: Yup.string().required("This field is required."),
     country: Yup.object().required("This field is required."),
   });
