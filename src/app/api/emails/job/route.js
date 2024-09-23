@@ -65,14 +65,14 @@ export async function POST(request) {
     <tr>
       <td style="padding: 40px">
         <h2 style="text-align: left; font-size: 20px;color:#202020;">Dear ${firstName} ${lastName},</h2>
-        <p style="text-align: left; font-size: 16px;color:#202020;"> Thank you for reaching out to Modellist Digital! We have successfully received your request for our services/products. Our team is currently reviewing your details and will get back to you shortly with the best options. </p>
+        <p style="text-align: left; font-size: 16px;color:#202020;"> Thank you for reaching out to Spectrum Consults! We have successfully received your request for our services/products. Our team is currently reviewing your details and will get back to you shortly with the best options. </p>
         <p style="text-align: left; font-size: 16px;font-weight: 600;color:#202020;"> What to Expect Next: </p>
         <ul style="margin:0;padding: 0 0 0 18px;color:#202020;">
           <li style="text-align: left; font-size: 16px;color:#202020;">A member of our team will contact you soon to discuss your needs and provide a tailored solution.</li>
           <li style="text-align: left; font-size: 16px;color:#202020;">If you have any immediate questions, feel free to reply to this email.</li>
         </ul>
         <p style="text-align: left; font-size: 16px;color:#202020;"> Thank you for choosing us! </p>
-        <h2 style="text-align: left; font-size: 20px;color:#202020;"> Best, <br /> The Modellist Digital Team </h2>
+        <h2 style="text-align: left; font-size: 20px;color:#202020;"> Best, <br /> The Spectrum Consults Team </h2>
       </td>
     </tr>
   </tbody>

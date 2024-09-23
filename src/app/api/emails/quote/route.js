@@ -52,7 +52,7 @@ export async function POST(request) {
           <li style="text-align: left; font-size: 16px;color:#202020;">If you have any immediate questions, please feel free to reply to this email.</li>
         </ul>
         <p style="text-align: left; font-size: 16px;color:#202020;"> We appreciate your patience! </p>
-        <h2 style="text-align: left; font-size: 20px;color:#202020;"> Best, <br /> The Modellist Digital Team </h2>
+        <h2 style="text-align: left; font-size: 20px;color:#202020;"> Best, <br /> The Spectrum Consults Team </h2>
       </td>
     </tr>
   </tbody>
