@@ -41,7 +41,7 @@ export async function POST(request) {
 
     // Set up email data for the client
     const mailOptionsClient = {
-      from: '"The Modellist Limited" <noreply@spectrumconsults.io>',
+      from: '"Spectrum Consults" <noreply@spectrumconsults.io>',
       to: email,
       subject: "Reset password request",
       html: `

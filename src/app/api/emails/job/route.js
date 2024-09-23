@@ -40,7 +40,7 @@ export async function POST(request) {
 
     // Set up email data for the recipient
     const mailOptionsRecipient = {
-      from: '"The Modellist Limited" <noreply@spectrumconsults.io>', // Sender address
+      from: '"Spectrum Consults" <noreply@spectrumconsults.io>', // Sender address
       to: "noreply@spectrumconsults.io", // Change to your recipient's email
       subject: "Job Form Submission",
       text: `Name: ${fullName}\nEmail: ${email}\nPhone: ${phone}\nDesired position: ${position}\nMessage: ${message}`,
@@ -49,7 +49,7 @@ export async function POST(request) {
 
     // Set up email data for the client
     /*const mailOptionsClient = {
-      from: '"The Modellist Limited" <noreply@spectrumconsults.io>', // Sender address
+      from: '"Spectrum Consults" <noreply@spectrumconsults.io>', // Sender address
       to: email, // Client's email
       subject: "Your request has been received",
       html: `
@@ -57,7 +57,7 @@ export async function POST(request) {
   <thead>
     <tr>
       <td>
-        <img style="width: 100%" src="https://cms.modellistdigital.com/wp-content/uploads/2024/07/email-header.png" />
+        <img style="width: 100%" src="https://cms.spectrumconsults.io/wp-content/uploads/2024/07/email-header.png" />
       </td>
     </tr>
   </thead>
@@ -77,20 +77,20 @@ export async function POST(request) {
     </tr>
   </tbody>
   <tfoot >
-				<td style="padding: 12px 40px;background: #0C0C0C;background-size:cover;background-image:url(https://cms.modellistdigital.com/wp-content/uploads/2024/07/Group-80513.png);">
+				<td style="padding: 12px 40px;background: #0C0C0C;background-size:cover;background-image:url(https://cms.spectrumconsults.io/wp-content/uploads/2024/07/Group-80513.png);">
 					
 					<table style="width:100%">
 						
 						<td style="width: 50%; padding-right: 30px">
-							 <img src="https://cms.modellistdigital.com/wp-content/uploads/2024/07/logo.png" style="width:254px;">
+							 <img src="https://cms.spectrumconsults.io/wp-content/uploads/2024/07/logo.png" style="width:254px;">
 						</td>
 						<td style="width: 50%;color: #fff;font-size: 12px;">
-							<ul style="margin:0;padding: 0;list-style-image: url(https://cms.modellistdigital.com/wp-content/uploads/2024/07/Ellipse-335.png);">
+							<ul style="margin:0;padding: 0;list-style-image: url(https://cms.spectrumconsults.io/wp-content/uploads/2024/07/Ellipse-335.png);">
 								<li>
 									<a href="tel:+442070433795" style="color: #fff;font-size: 12px;text-decoration: none;">+442070433795</a>
 								</li>
 								<li>
-									<a href="mailto:info@modellistdigital.com" style="color: #fff;font-size: 12px;text-decoration: none;">info@modellistdigital.com</a>
+									<a href="mailto:info@spectrumconsults.io" style="color: #fff;font-size: 12px;text-decoration: none;">info@spectrumconsults.io</a>
 								</li>
 							</ul>
 						</td>

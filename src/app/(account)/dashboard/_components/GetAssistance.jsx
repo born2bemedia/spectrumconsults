@@ -14,10 +14,10 @@ const GetAssistance = () => {
       </p>
 
       <div className="contacts">
-        <Link href="mailto:info@modellistdigital.com">
+        <Link href="mailto:info@spectrumconsults.io">
           Email us:
           <br />
-          info@modellistdigital.com
+          info@spectrumconsults.io
         </Link>
         <Link href="tel:+442070433795">
           Call us:
