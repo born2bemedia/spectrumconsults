@@ -9,6 +9,7 @@ import CompletePackages from "./_components/CompletePackages";
 import ServicesTabs from "./_components/ServicesTabs";
 import OrderPopup from "@/components/OrderPopup";
 import ThanksPopup from "@/components/ThanksPopup";
+import Services from "./_components/Services";
 
 export const metadata = {
   title: "Business Consulting Services",
@@ -26,7 +27,7 @@ const BusinessConsulting = () => {
   return (
     <>
       <ConsultingHero />
-      <ServicesTabs />
+      <Services />
       <CompletePackagesTop />
       <CompletePackages />
       <WhyChoose />

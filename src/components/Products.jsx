@@ -9,24 +9,12 @@ const Products = ({ category, quantity = 4 }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const data = await fetchProductsByCategory(category, quantity);
-        console.log(data);
-        setProducts(data);
-      } catch (error) {
-        console.error("Error fetching products:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchProducts();
+    setProducts(category);
   }, [category]);
 
   return (
     <>
-      <div className={`${loading && "loading"} services-row`}>
+      <div className={`services-row`}>
         {products.length > 0 &&
           products.map((product) => (
             <div className="service" key={product.id}>
