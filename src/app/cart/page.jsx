@@ -39,7 +39,7 @@ const CartPage = () => {
                             <button onClick={() => deleteFromCart(item.id)}>
                               <DeleteIcon />
                             </button>
-                            <span>{item.title}</span>
+                            <span dangerouslySetInnerHTML={{ __html: item.title }} />
                           </div>
                           <div>{item.quantity}</div>
                           <div>€{item.price}</div>

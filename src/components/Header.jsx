@@ -96,10 +96,11 @@ const Header = () => {
               <Link href="/">Home</Link>
               <Link href="/business-consulting">Business Consulting</Link>
               <Link href="/marketing-consulting">Marketing Consulting</Link>
+              <Link href="/it-consulting">IT Consulting</Link>
               <Link href="/what-we-do">What We Do</Link>
-              <Link href="/client-results">Client Results</Link>
             </div>
             <div className="right-col">
+              <Link href="/client-results">Client Results</Link>
               <Link href="/industry-news">Industry News</Link>
               <Link href="/articles">Articles</Link>
               <Link href="/careers">Careers</Link>

@@ -8,6 +8,7 @@ import HomeValues from "./_components/HomeValues";
 import { ConnectBlock } from "../../components/ConnectBlock";
 import HomeStory from "./_components/HomeStory";
 import HomeSolutions from "./_components/HomeSolutions";
+import ItServices from "./_components/ItServices";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <HomeHero />
       <BusinessServices />
       <MarketingServices />
+      <ItServices />
       <HomeAbout />
       <HomeValues />
       <HomeStory />

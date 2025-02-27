@@ -18,14 +18,20 @@ const Footer = () => {
               <p>Optimise your operations and transform your strategy today.</p>
 
               <div className="soc">
-                <Link href="https://www.facebook.com/spectrumconsults.io" target="_blank">
+                <Link
+                  href="https://www.facebook.com/spectrumconsults.io"
+                  target="_blank"
+                >
                   <img src="/images/facebook.svg" alt="facebook" />
                 </Link>
-                <Link href="https://www.instagram.com/spectrumconsults.io" target="_blank">
+                <Link
+                  href="https://www.instagram.com/spectrumconsults.io"
+                  target="_blank"
+                >
                   <img src="/images/instagram.svg" alt="instagram" />
                 </Link>
                 <Link href="https://x.com/spectrumcons" target="_blank">
-                  <img src="/images/x.svg" alt="x"/>
+                  <img src="/images/x.svg" alt="x" />
                 </Link>
               </div>
 
@@ -34,13 +40,20 @@ const Footer = () => {
                   <Link href="tel:+442070434509">+442070434509</Link>
                 </li>
                 <li>
-                  <Link href="mailto:info@spectrumconsults.io">info@spectrumconsults.io</Link>
+                  <Link href="mailto:info@spectrumconsults.io">
+                    info@spectrumconsults.io
+                  </Link>
                 </li>
                 <li>
-                  <Link href="#">Registration address: 128 City Road, London, United Kingdom, EC1V 2NX</Link>
+                  <Link href="#">
+                    Registration address: 128 City Road, London, United Kingdom,
+                    EC1V 2NX
+                  </Link>
                 </li>
                 <li>
-                  <Link href="#">Office address: 62 Great Eastern Street, London, EC2A 3QR</Link>
+                  <Link href="#">
+                    Office address: 62 Great Eastern Street, London, EC2A 3QR
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -62,7 +75,12 @@ const Footer = () => {
                     <Link href="/business-consulting">Business Consulting</Link>
                   </li>
                   <li>
-                    <Link href="/marketing-consulting">Marketing Consulting</Link>
+                    <Link href="/marketing-consulting">
+                      Marketing Consulting
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/it-consulting">IT Consulting</Link>
                   </li>
                 </ul>
               </div>
@@ -84,7 +102,9 @@ const Footer = () => {
                 <h2>Legal</h2>
                 <ul>
                   <li>
-                    <Link href="/terms-and-conditions">Terms and Conditions</Link>
+                    <Link href="/terms-and-conditions">
+                      Terms and Conditions
+                    </Link>
                   </li>
                   <li>
                     <Link href="/privacy-policy">Privacy Policy</Link>
@@ -101,7 +121,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          © {currentYear} Spectrum Consults. All Rights Reserved | <Link href="/privacy-policy">Privacy Policy</Link>
+          © {currentYear} Spectrum Consults. All Rights Reserved |{" "}
+          <Link href="/privacy-policy">Privacy Policy</Link>
         </div>
       </div>
     </footer>
