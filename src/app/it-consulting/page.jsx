@@ -12,11 +12,11 @@ import ThanksPopup from "@/components/ThanksPopup";
 import Services from "./_components/Services";
 
 export const metadata = {
-  title: "IT Consulting Services",
-  description: "",
+  title: "IT Consulting | Spectrum Consults",
+  description: "Optimize your digital presence with Spectrum Consults' IT consulting services. From website development to cybersecurity and tech support, we provide tailored solutions for freelancers, entrepreneurs, and personal brands.",
   openGraph: {
-    title: "IT Consulting Services",
-    description: "",
+    title: "IT Consulting | Spectrum Consults",
+    description: "Optimize your digital presence with Spectrum Consults' IT consulting services. From website development to cybersecurity and tech support, we provide tailored solutions for freelancers, entrepreneurs, and personal brands.",
     images: "https://spectrumconsults.io/images/meta.png",
   },
 };
