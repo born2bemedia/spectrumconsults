@@ -45,6 +45,7 @@ body {
   margin: 0;
   background: #191919;
   font-family: "ZonaPro", sans-serif;
+  top: 0 !important;
   @media (max-width: rem(992)) {
   }
   &.no-scroll {
@@ -68,6 +69,10 @@ body {
     background-color: #ea4073;
     border-radius: 100px;
   }
+}
+
+.skiptranslate { 
+  display: none !important;
 }
 
 input,
