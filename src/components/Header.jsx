@@ -7,6 +7,7 @@ import { useAuth } from "@/context/AuthContext";
 import { usePathname } from "next/navigation";
 import MenuIcon from "@/icons/MenuIcon";
 import MenuIconClose from "@/icons/MenuIconClose";
+import LangSwitcher from "./LangSwitcher";
 
 const Header = () => {
   const { cart, cartQuantity } = useCart();
@@ -38,6 +39,9 @@ const Header = () => {
             </Link>
 
             <div className="header-right">
+              <div className="languge">
+                <LangSwitcher />
+              </div>
               <div className="head-account">
                 {currentUser ? (
                   <Link className="white-button" href="/dashboard">
