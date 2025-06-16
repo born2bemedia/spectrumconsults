@@ -26,12 +26,6 @@ const ConnectSoc = () => {
             className="soc"
           >
             <Link
-              href="https://www.facebook.com/spectrumconsults.io"
-              target="_blank"
-            >
-              <img src="/images/facebook.svg" alt="facebook" />
-            </Link>
-            <Link
               href="https://www.instagram.com/spectrumconsults.io"
               target="_blank"
             >
